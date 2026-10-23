@@ -52,73 +52,67 @@ credentials.json
 assets/calligraphy/liang-peisheng-xiaocuan-jian.ttf
 ''')
 write('.gitattributes', '* text=auto\n*.png binary\n*.jpg binary\n*.webp binary\n*.glb binary\n*.blend binary\n*.ogv binary\n*.wav binary\n*.part binary\n')
-write('README.md', f'''# 爨境·共生
+write('README.md', '''# 爨境·共生
 
-民族交往交流交融主题的三维互动游戏。使用 Godot Engine 4.7.2、GDScript、Blender 模型和 Shader 实现，提供安卓与 Windows 两端体验。
+民族交往交流交融主题的三维互动游戏，使用 Godot Engine 4.7.2、GDScript、Shader 与 Blender 模型实现，适配安卓和 Windows。
 
-## 先体验安卓版本
+> **工程文件：**本仓库提供安卓与 Windows 共用的程序源码、Godot 场景、Shader、配置、制作工具和构建说明，供代码审阅。完整可运行工程（包含全部模型、图片、音频、剧情视频、Blender 源文件与所需依赖）见完整工程包 **CuanJingGongSheng-Source-v0.2.1.zip**。本仓库的 Code → Download ZIP 是代码审阅包，不等同于上述完整工程附件。
 
-[安卓安装与操作](docs/ANDROID.md) · [运行附件说明](docs/DOWNLOADS.md)
+## 1. 安卓端展示
 
-安卓版本：0.2.1（3），Android 7.0 / API 24 及以上，64 位 ARM，横屏，离线运行。默认单人触屏，也可选择双人触屏。支持移动、跳跃、长按操作、交谈、切换角色、解碑和物件小艺。图标使用项目提供的美术图片。
+[安卓安装与操作](docs/ANDROID.md)
 
-**测试范围：**安装包签名、架构、资源完整性和 APK 资源触屏模拟已检查；尚未在实体安卓手机上安装测试，真机表现需要实测。
+版本 0.2.1（3），Android 7.0 / API 24 及以上，64 位 ARM，横屏，离线运行。默认单人触屏，也可选择双人触屏。支持移动、跳跃、长按操作、交谈、切换角色、解碑与器物小艺。
+
+安装包签名、架构、资源完整性和 APK 资源触屏模拟已经检查；尚未在实体安卓手机上安装测试。
 
 ![安卓双人触屏界面](docs/images/android-dual.png)
 
-## Windows 电脑版本
+## 2. Windows 电脑端
 
-[电脑启动与操作](docs/WINDOWS.md) · [运行附件说明](docs/DOWNLOADS.md)
+[电脑启动与操作](docs/WINDOWS.md)
 
-完整解压 Windows ZIP，保持 `CuanParty.exe` 与 `CuanParty.pck` 在同一目录，双击 EXE。支持键盘单人 / 同屏双人，无需先安装 Godot。已完成原生程序启动及成品包 GPU 检查。
+完整解压运行附件，保持 CuanParty.exe 与 CuanParty.pck 在同一目录，双击 EXE；支持键盘单人与同屏双人，无需预先安装 Godot。已完成 Windows 原生启动、独立 PCK 加载及成品包 GPU 检查。
 
 ![电脑游戏界面](docs/images/windows.png)
 
-## 游戏内容
+## 3. 源码与完整工程
 
-四名同行角色在碑院合读、断溪护碑、灯火共庭三个连续场景中合作，完成传拓、辨字、修路、救碑、安放随身物品、点灯及共读长卷；沿途提供器物故事和不同的小艺互动。主线通关后有彩色步花，全成就后解锁发光彩碑和可交互烟花。
+安卓与电脑端共用一套完整 Godot 工程，分别通过移动控制层、键盘控制和导出预设适配。
 
-## 完整源代码与运行
+- scripts/：游戏、合作、谜题、小艺、界面、触屏和剧情的 GDScript 源码。
+- shaders/：材质、水体、光晕、步花和烟花等 Shader 源码。
+- scenes/：场景和角色入口。
+- project.godot、export_presets.cfg：工程入口与双端导出配置。
+- tools/：制作、检查和构建工具。
+- docs/、assets/legal/：运行、构建、验证范围和素材来源。
+- 完整模型、剧情、美术资源及 Blender 工程：见完整源码 ZIP。
 
-安卓与 Windows **共用本仓库的同一个完整 Godot 工程**，分别通过移动端控制层和导出预设适配。它们不是两份互不相关的源码。
+**直接运行或重新构建：**解压完整源码 ZIP，使用 Godot **4.7.2** 导入根目录 project.godot，等待资源导入后按 F5 运行。ZIP 内资源已还原、依赖已备齐。[构建说明](docs/BUILD.md)
 
-1. [下载完整源码工程 ZIP]({URL}/archive/refs/heads/main.zip) 并解压，或克隆本仓库。
-2. 使用 Python 3.11+ 运行 `python tools/setup_submission.py`，还原大资源分块，并从字库原发布方获取项目所用字体。字库有使用范围限制，本公开仓库不设字体下载镜像；脚本会核对原字体 SHA-256。
-3. 在 Godot **4.7.2** 中导入根目录 `project.godot`，等待原始资源导入，按 F6/F5 运行场景 / 工程。
-4. 分别导出安卓或 Windows，见 [源码构建说明](docs/BUILD.md)。`tools/build_portable.ps1` 提供不依赖开发机目录的双端导出入口。
+如果以本仓库为开发起点，先从完整工程附件补齐 assets/ 与 character-source/，再导入工程。仓库中部分资源元数据及来源记录保留供审阅，不能替代实际资源文件。
 
-GitHub 的 Code → Download ZIP 可下载本仓库完整源码。它包含 GDScript、Shader、场景、项目配置、模型、图片、音频、五段剧情视频、Blender 源文件、工具及资料来源；字体作为第三方依赖由原站获取。大资源分块可无损还原，不改变原始文件内容。安卓 APK、Windows 运行包与可直接导入的评审源码压缩包作为参赛附件另行提交。
+## 4. 游戏内容
 
-| 路径 | 内容 |
-| --- | --- |
-| `project.godot` | 可导入运行的 Godot 工程入口 |
-| `scripts/` | 游戏、合作、谜题、小游戏、界面、触屏及剧情逻辑 |
-| `shaders/` | 水体、石材、光晕、烟花、步花等着色代码 |
-| `scenes/` | 场景与角色入口 |
-| `assets/` | 运行时模型、图像、音频、剧情与资料来源 |
-| `character-source/` | 可编辑的 Blender 模型源文件 |
-| `tools/` | 美术制作、验证、依赖准备和构建工具 |
-| `docs/` | 安装、操作、双端构建及验证范围 |
+四位同行在碑院合读、断溪护碑、灯火共庭三个连续场景中合作，完成传拓、辨字、修路、救碑、物件归位、点灯与共读长卷。沿途提供器物故事和不同的小艺互动；通关后有彩色步花，全成就后解锁发光彩碑与可交互烟花。
 
-## 参赛材料建议
+![共生长卷](docs/images/scroll.png)
 
-主要成果填写“可运行的三维互动游戏软件系统（安卓 APK + Windows 程序）”。安卓可放在展示顺序前面，电脑版本同样是可运行的软件系统。源码仓库地址填写本仓库链接，并同时提交可运行包、运行说明和必要的演示材料。最终项目、格式及其他条件仍以完整赛事通知为准。
+## 5. 素材与使用范围
 
-## 素材与使用范围
-
-源码公开不等于全部素材采用自由开源许可。第三方图片、字体和引擎各按其原有说明使用；参见 [素材与许可](docs/ASSETS.md)、`assets/legal/` 和 `assets/references/`。作品情节、游戏机制、长卷与场景为艺术创作，不作为民族生活的普遍描述或历史建筑复原。
+代码可审阅不代表全部素材采用自由开源许可。字体、照片和引擎组件按原有说明使用，见 [素材说明](docs/ASSETS.md) 和 assets/legal/。字库不设公开下载镜像；官方获取及校验工具随工程保留。签名私钥、密码、SDK、开发机缓存和个人凭据未上传。故事、长卷、场景为艺术创作，不作为民族生活的普遍描述或历史建筑复原。
 ''')
-write('docs/ANDROID.md', f'''# 安卓安装与操作
+write('docs/ANDROID.md', '''# 安卓安装与操作
 
-使用参赛运行附件 `CuanJingGongSheng-Android-v0.2.1.apk`，传到手机，在文件管理器打开并按系统提示安装。最低 Android 7.0、64 位 ARM、横屏。首次启动后不需要联网下载游戏资源。源码下载与附件对应关系见 [运行附件说明](DOWNLOADS.md)。
+使用安装包 `CuanJingGongSheng-Android-v0.2.1.apk`，传到手机，在文件管理器打开并按系统提示安装。最低 Android 7.0、64 位 ARM、横屏。首次启动后不需要联网下载游戏资源。源码下载与附件对应关系见 [运行附件说明](DOWNLOADS.md)。
 
 摇杆移动；“跳跃”跳起；“操作”点击或按住完成任务；“交谈”与附近人物交互；“换人”切换同伴。封面可切单人 / 双人触屏。对话、视频与谜题按画面按钮操作。
 
 当前 APK 版本 0.2.1 / versionCode 3，包名 `org.cuanjing.gongsheng`。沿用既有发布签名，签名私钥不公开上传。已核对 APK 签名、ARM64、资源、图标和五段视频；触屏截图与交互检查来自 APK 资源在电脑上的触摸模拟，尚未完成实体安卓手机安装测试。
 ''')
-write('docs/WINDOWS.md', f'''# Windows 启动与操作
+write('docs/WINDOWS.md', '''# Windows 启动与操作
 
-使用参赛运行附件 `CuanJingGongSheng-Windows-v0.2.1.zip`，完整解压后双击 `CuanParty.exe`，保留同目录 `CuanParty.pck`。这是可直接运行的 Windows 软件，不要求评委安装开发引擎。源码下载与附件对应关系见 [运行附件说明](DOWNLOADS.md)。
+使用运行包 `CuanJingGongSheng-Windows-v0.2.1.zip`，完整解压后双击 `CuanParty.exe`，保留同目录 `CuanParty.pck`。无需安装 Godot 引擎。源码下载与附件对应关系见 [运行附件说明](DOWNLOADS.md)。
 
 - 1P：WASD 移动，空格跳跃，E 操作，F 交谈，Tab 换人。
 - 2P：方向键移动，小键盘 Enter 跳跃，P 操作，/ 交谈，右 Shift 换人。
@@ -126,37 +120,15 @@ write('docs/WINDOWS.md', f'''# Windows 启动与操作
 
 Windows 原生启动、独立 PCK 资源加载、GPU 场景与奖励专项已经验证。运行包无联网依赖。
 ''')
-write('docs/BUILD.md', '''# 源码运行与双端构建
+write('docs/BUILD.md', '''# 完整工程构建
 
-## 共同准备
+先解压完整源码 ZIP；从 GitHub 下载的代码审阅包需先从完整工程补齐 assets/ 和 character-source/。用 Godot 4.7.2 导入 project.godot，等待导入完成后按 F5 运行。
 
-安装 Godot Engine 4.7.2 和匹配的导出模板，以及 Python 3.11+。在工程根目录执行 `python tools/setup_submission.py`。该命令先无损还原分块的大资源，再从曲靖珠江网原发布地址获取所用字体并校验固定哈希；字体仅按其原有教育、学习等非商业用途范围使用。
+安装匹配的导出模板，Windows 导出入口为 tools/build_portable.ps1，传入 -GodotExe 本机Godot路径 -Platform Windows；导出 EXE 与 PCK 需配套分发。
 
-导入 `project.godot` 等待完成首次资源导入，然后 F5 运行。`assets/characters/` 使用已导出的 GLB，不必安装 Blender 才能启动游戏；修改角色原始模型时，可另用 Blender 打开 `character-source/` 的 `.blend` 文件。
+安卓配置 JDK 17、Android SDK API 36 和 build-tools 36.0.0 后，通过同脚本 -Platform Android -DebugBuild 导出测试 APK。预设 ARM64、最低 API 24、目标 API 36。构建者使用自己的签名，原发布私钥、密码、引擎与 SDK 均未上传。已有包的验证记录见 validation/，安卓尚未真机实测。
 
-## Windows
-
-在 PowerShell 执行：
-
-```powershell
-./tools/build_portable.ps1 -GodotExe 'C:/path/to/Godot_v4.7.2-stable_win64_console.exe' -Platform Windows
-```
-
-输出 `builds/Windows/CuanParty.exe` 和 `.pck`。将二者一起分发。
-
-## 安卓
-
-安装 JDK 17、Android SDK、API 36 和 build-tools 36.0.0，并在 Godot 编辑器的安卓导出设置中填写本机 SDK 与 Java 路径。导出预设采用 ARM64，最低 API 24、目标 API 36。开发测试可使用自己本机的调试签名：
-
-```powershell
-./tools/build_portable.ps1 -GodotExe 'C:/path/to/Godot_v4.7.2-stable_win64_console.exe' -Platform Android -DebugBuild
-```
-
-发布签名使用构建者自己的密钥，不能将 `.jks`、密码或个人凭据提交到仓库。原发布 APK 的签名与版本检查见 `docs/validation/双端验证记录.json`；重新构建的 APK 应以构建者自己的签名信息为准。
-
-## 工具与验证范围
-
-`tools/verify_*.gd` 保留各阶段的实际验证工具；部分历史美术导出脚本记录开发机路径，复用时需按本机修改。双端通用构建入口为上面的 `build_portable.ps1`。参赛运行包及其测试记录使用同一版本工程，安卓尚未实体手机实测，不将电脑触屏模拟描述为真机测试。
+GLB 用于运行；完整 ZIP 中的 .blend 用于 Blender 编辑。部分历史制作脚本含开发机路径，复用需自行修改。
 ''')
 write('docs/ASSETS.md', '''# 素材与许可说明
 
@@ -168,24 +140,19 @@ write('docs/ASSETS.md', '''# 素材与许可说明
 - 用户提供的剧情视频及游戏美术按本项目参赛展示和学习使用整理，不额外声明第三方权利已经转让。
 - `.godot` 缓存、Android SDK、引擎二进制、签名私钥、密码和个人凭据不属于项目源码，未上传。
 ''')
-write('docs/DOWNLOADS.md', f'''# 运行包与源码对应关系
+write('docs/DOWNLOADS.md', '''# 工程与运行包
 
-本 GitHub 仓库用于交付和审阅完整源码。安卓 APK 与 Windows ZIP 是本作品另外提交的可运行软件附件，不需要评委自行编译。
+| 文件 | 内容与使用方式 |
+| --- | --- |
+| `CuanJingGongSheng-Android-v0.2.1.apk` | Android 7.0 及以上、ARM64 手机安装，横屏触控 |
+| `CuanJingGongSheng-Windows-v0.2.1.zip` | 完整解压，保持 EXE 与 PCK 同目录后启动 |
+| `CuanJingGongSheng-Source-v0.2.1.zip` | 含全部资源和依赖的 Godot 工程，解压后导入 `project.godot` |
 
-| 提交顺序 | 附件 | 运行方式 |
-| --- | --- | --- |
-| 1 | `CuanJingGongSheng-Android-v0.2.1.apk` | 安卓手机安装，横屏触控 |
-| 2 | `CuanJingGongSheng-Windows-v0.2.1.zip` | Windows 完整解压后启动 EXE |
-| 3 | `CuanJingGongSheng-Source-v0.2.1.zip` | 完整源码评审附件，导入 Godot 4.7.2 |
+安卓与 Windows 共用同一套游戏逻辑、场景和资源，通过控制层与导出预设适配。
 
-本仓库的 [Code → Download ZIP]({URL}/archive/refs/heads/main.zip) 也可下载全部公开源码。先运行 `python tools/setup_submission.py` 还原大文件并从原发布方准备字体，再在 Godot 4.7.2 中打开 `project.godot`。安卓与 Windows 的逻辑、场景与资源共用同一工程，平台差异在移动控制层与导出预设中。
+GitHub 仓库提供程序源码、场景配置和制作工具；Code → Download ZIP 不包含全部运行素材。运行或重新构建请使用完整源码工程包，Godot 版本为 4.7.2。
 
-运行附件来自已验证的 0.2.1（3）版本，SHA-256：
-
-- Android APK：`5ba36b27ca06fde932669158755ffcba8fb0fd8efab64d7a686e2a6e7e0bf9ab`
-- Windows ZIP：`68936a39c0658d49f4612e8976036b8006d82b3ae60c096d6f82ce7fa8f33a4c`
-
-上述安装包目前作为参赛附件提供，未声称已经上传到 GitHub Releases。源码与运行包的验证范围见 `docs/validation/`，安卓尚未实体手机实测。
+安装与操作见 [安卓说明](ANDROID.md) 和 [Windows 说明](WINDOWS.md)，构建步骤见 [构建说明](BUILD.md)。验证范围见 `validation/`；安卓尚未实体手机实测。
 ''')
 write('tools/setup_submission.py', '''from pathlib import Path
 import hashlib, io, json, urllib.request, zipfile
