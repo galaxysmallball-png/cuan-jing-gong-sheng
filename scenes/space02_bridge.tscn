@@ -1,0 +1,229 @@
+[gd_scene format=3]
+
+[ext_resource type="FontFile" path="res://assets/calligraphy/liang-peisheng-xiaocuan-jian.ttf" id="font_cuan"]
+
+[ext_resource type="Script" path="res://scripts/chapter02_party.gd" id="1_bridge"]
+
+[sub_resource type="StandardMaterial3D" id="Material_wood"]
+albedo_color = Color(0.43, 0.30, 0.18, 1)
+roughness = 0.95
+
+[sub_resource type="StandardMaterial3D" id="Material_band"]
+albedo_color = Color(0.18, 0.20, 0.22, 1)
+roughness = 0.85
+
+[sub_resource type="StandardMaterial3D" id="Material_robe"]
+albedo_color = Color(0.57, 0.42, 0.26, 1)
+roughness = 0.95
+
+[sub_resource type="StandardMaterial3D" id="Material_skin"]
+albedo_color = Color(0.68, 0.57, 0.46, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="Material_marker"]
+albedo_color = Color(0.25, 0.55, 0.65, 1)
+emission_enabled = true
+emission = Color(0.08, 0.18, 0.22, 1)
+
+[sub_resource type="StandardMaterial3D" id="Material_water"]
+albedo_color = Color(0.08, 0.19, 0.25, 1)
+roughness = 0.5
+emission_enabled = true
+emission = Color(0.01, 0.035, 0.05, 1)
+
+[sub_resource type="BoxMesh" id="Mesh_crate"]
+material = SubResource("Material_wood")
+size = Vector3(1.1, 1, 0.85)
+
+[sub_resource type="BoxShape3D" id="Shape_crate"]
+size = Vector3(1.1, 1, 0.85)
+
+[sub_resource type="BoxMesh" id="Mesh_band"]
+material = SubResource("Material_band")
+size = Vector3(0.12, 1.04, 0.89)
+
+[sub_resource type="BoxMesh" id="Mesh_deck"]
+material = SubResource("Material_wood")
+size = Vector3(6.15, 0.3, 2.2)
+
+[sub_resource type="BoxMesh" id="Mesh_joint"]
+material = SubResource("Material_band")
+size = Vector3(0.08, 0.04, 2.22)
+
+[sub_resource type="BoxShape3D" id="Shape_bridge"]
+size = Vector3(6.15, 0.3, 2.2)
+
+[sub_resource type="BoxMesh" id="Mesh_water"]
+material = SubResource("Material_water")
+size = Vector3(6, 0.08, 6)
+
+[sub_resource type="CylinderMesh" id="Mesh_dock"]
+material = SubResource("Material_marker")
+top_radius = 0.75
+bottom_radius = 0.75
+height = 0.04
+
+[sub_resource type="CylinderMesh" id="Mesh_robe"]
+material = SubResource("Material_robe")
+top_radius = 0.18
+bottom_radius = 0.36
+height = 1.05
+
+[sub_resource type="SphereMesh" id="Mesh_head"]
+material = SubResource("Material_skin")
+radius = 0.17
+height = 0.34
+
+[sub_resource type="CylinderMesh" id="Mesh_leg"]
+material = SubResource("Material_band")
+top_radius = 0.065
+bottom_radius = 0.07
+height = 0.42
+
+[sub_resource type="CylinderMesh" id="Mesh_arm"]
+material = SubResource("Material_robe")
+top_radius = 0.065
+bottom_radius = 0.065
+height = 0.38
+
+[sub_resource type="BoxMesh" id="Mesh_handle"]
+material = SubResource("Material_wood")
+size = Vector3(0.06, 0.34, 0.06)
+
+[sub_resource type="BoxMesh" id="Mesh_hammer"]
+material = SubResource("Material_band")
+size = Vector3(0.3, 0.13, 0.15)
+
+
+[node name="BridgeCooperation" type="Node3D"]
+script = ExtResource("1_bridge")
+
+[node name="MaterialCrate" type="AnimatableBody3D" parent="."]
+position = Vector3(4, 0.5, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="MaterialCrate"]
+mesh = SubResource("Mesh_crate")
+
+[node name="BandA" type="MeshInstance3D" parent="MaterialCrate"]
+position = Vector3(-0.32, 0, 0)
+mesh = SubResource("Mesh_band")
+
+[node name="BandB" type="MeshInstance3D" parent="MaterialCrate"]
+position = Vector3(0.32, 0, 0)
+mesh = SubResource("Mesh_band")
+
+[node name="Collision" type="CollisionShape3D" parent="MaterialCrate"]
+shape = SubResource("Shape_crate")
+
+[node name="Caption" type="Label3D" parent="MaterialCrate"]
+position = Vector3(0, 1.05, 0.2)
+font = ExtResource("font_cuan")
+font_size = 32
+pixel_size = 0.006
+text = "修桥木料"
+
+[node name="SupplyDock" type="Node3D" parent="."]
+position = Vector3(9.5, 0.04, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="SupplyDock"]
+mesh = SubResource("Mesh_dock")
+
+[node name="Caption" type="Label3D" parent="SupplyDock"]
+position = Vector3(0, 0.12, 1)
+font = ExtResource("font_cuan")
+font_size = 30
+pixel_size = 0.005
+text = "材料交付位置"
+
+[node name="Worker" type="Node3D" parent="."]
+position = Vector3(10, 0, -0.85)
+
+[node name="Robe" type="MeshInstance3D" parent="Worker"]
+position = Vector3(0, 0.85, 0)
+mesh = SubResource("Mesh_robe")
+
+[node name="Head" type="MeshInstance3D" parent="Worker"]
+position = Vector3(0, 1.56, 0)
+mesh = SubResource("Mesh_head")
+
+[node name="LeftLeg" type="MeshInstance3D" parent="Worker"]
+position = Vector3(-0.13, 0.21, 0)
+mesh = SubResource("Mesh_leg")
+
+[node name="RightLeg" type="MeshInstance3D" parent="Worker"]
+position = Vector3(0.13, 0.21, 0)
+mesh = SubResource("Mesh_leg")
+
+[node name="LeftArm" type="MeshInstance3D" parent="Worker"]
+position = Vector3(-0.27, 1.01, 0)
+rotation_degrees = Vector3(0, 0, 12)
+mesh = SubResource("Mesh_arm")
+
+[node name="RightArm" type="Node3D" parent="Worker"]
+position = Vector3(0.27, 1.2, 0)
+rotation_degrees = Vector3(0, 0, -9)
+
+[node name="Mesh" type="MeshInstance3D" parent="Worker/RightArm"]
+position = Vector3(0, -0.19, 0)
+mesh = SubResource("Mesh_arm")
+
+[node name="Handle" type="MeshInstance3D" parent="Worker/RightArm"]
+position = Vector3(0.12, -0.36, 0.12)
+mesh = SubResource("Mesh_handle")
+
+[node name="Hammer" type="MeshInstance3D" parent="Worker/RightArm"]
+position = Vector3(0.12, -0.15, 0.12)
+mesh = SubResource("Mesh_hammer")
+
+[node name="Name" type="Label3D" parent="Worker"]
+position = Vector3(0, 2.05, 0)
+font = ExtResource("font_cuan")
+font_size = 40
+pixel_size = 0.006
+text = "工匠"
+modulate = Color(0.9, 0.8, 0.65, 1)
+
+[node name="Creek" type="MeshInstance3D" parent="."]
+position = Vector3(15, -2.5, 0)
+mesh = SubResource("Mesh_water")
+
+[node name="BridgeAssembly" type="Node3D" parent="."]
+position = Vector3(12, 0, 0)
+rotation_degrees = Vector3(0, 0, -75)
+
+[node name="Deck" type="MeshInstance3D" parent="BridgeAssembly"]
+position = Vector3(3, -0.15, 0)
+mesh = SubResource("Mesh_deck")
+
+[node name="Joint1" type="MeshInstance3D" parent="BridgeAssembly"]
+position = Vector3(1, 0.02, 0)
+mesh = SubResource("Mesh_joint")
+
+[node name="Joint2" type="MeshInstance3D" parent="BridgeAssembly"]
+position = Vector3(2, 0.02, 0)
+mesh = SubResource("Mesh_joint")
+
+[node name="Joint3" type="MeshInstance3D" parent="BridgeAssembly"]
+position = Vector3(3, 0.02, 0)
+mesh = SubResource("Mesh_joint")
+
+[node name="Joint4" type="MeshInstance3D" parent="BridgeAssembly"]
+position = Vector3(4, 0.02, 0)
+mesh = SubResource("Mesh_joint")
+
+[node name="Joint5" type="MeshInstance3D" parent="BridgeAssembly"]
+position = Vector3(5, 0.02, 0)
+mesh = SubResource("Mesh_joint")
+
+[node name="BridgeBody" type="StaticBody3D" parent="."]
+position = Vector3(15, -0.15, 0)
+
+[node name="Collision" type="CollisionShape3D" parent="BridgeBody"]
+shape = SubResource("Shape_bridge")
+disabled = true
+
+[node name="WorkLight" type="OmniLight3D" parent="."]
+position = Vector3(12, 3, 1)
+light_color = Color(1, 0.7, 0.38, 1)
+light_energy = 1.0
+omni_range = 9.0

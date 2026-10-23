@@ -1,0 +1,13 @@
+.godot/
+builds/
+previews/
+backups/
+__pycache__/
+*.pyc
+*.blend1
+*.jks
+*.keystore
+*.p12
+credentials.json
+.env
+assets/calligraphy/liang-peisheng-xiaocuan-jian.ttf

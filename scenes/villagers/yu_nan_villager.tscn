@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="FontFile" path="res://assets/calligraphy/liang-peisheng-xiaocuan-jian.ttf" id="font_cuan"]
+
+[ext_resource type="PackedScene" path="res://scenes/characters/yu_nan_character.tscn" id="1"]
+
+
+[node name="YuNanVillager" type="Node3D"]
+
+[node name="Character" parent="." instance=ExtResource("1")]
+rotation = Vector3(0, 0.58, 0)
+
+[node name="NameLabel" type="Label3D" parent="."]
+position = Vector3(0, 1.93, 0)
+billboard = 1
+modulate = Color(0.95, 0.84, 0.63, 1)
+outline_modulate = Color(0.05, 0.08, 0.09, 1)
+text = "玉喃（傣族）"
+font = ExtResource("font_cuan")
+font_size = 48
+pixel_size = 0.003
+outline_size = 8
+no_depth_test = false

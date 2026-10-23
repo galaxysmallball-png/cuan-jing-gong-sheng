@@ -1,0 +1,22 @@
+[
+  {
+    "mean_channel_difference": 0.0,
+    "size": 192,
+    "variant": "icon"
+  },
+  {
+    "mean_channel_difference": 0.0,
+    "size": 432,
+    "variant": "icon_foreground"
+  },
+  {
+    "mean_channel_difference": 0.0,
+    "size": 432,
+    "variant": "icon_background"
+  },
+  {
+    "mean_channel_difference": 0.0,
+    "size": 432,
+    "variant": "icon_monochrome"
+  }
+]

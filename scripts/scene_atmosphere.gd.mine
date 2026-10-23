@@ -1,0 +1,323 @@
+extends "res://scripts/environment_art.gd"
+
+# Native scenery derived from the user's three concept boards. No scenery colliders:
+# the established walking lane, interactive objects and puzzle anchors stay authoritative.
+var world: Node3D
+var scenes: Array[Node3D] = []
+var town_lights: MultiMeshInstance3D
+var waterfall: MeshInstance3D
+var static_meshes: Array[MeshInstance3D] = []
+
+
+func setup(owner_world: Node3D) -> void:
+	world = owner_world
+	name = "ConceptSceneAtmosphere"
+	rng.seed = 20261018
+	for index in range(3):
+		var scene := Node3D.new()
+		scene.name = ["SunsetSteleCourt", "MoonlitCreek", "SharedLampCourt"][index]
+		scene.position.x = index * 20
+		add_child(scene)
+		scenes.append(scene)
+		_horizon(scene, index)
+	_misty_court()
+	_creek_valley()
+	_lamp_court()
+	_batch_static()
+
+
+func _quad(parent: Node3D, at: Vector3, dimensions: Vector2, material: Material) -> MeshInstance3D:
+	var node := MeshInstance3D.new()
+	var mesh := QuadMesh.new()
+	mesh.size = dimensions
+	node.mesh = mesh
+	node.position = at
+	node.material_override = material
+	parent.add_child(node)
+	return node
+
+
+func _horizon(parent: Node3D, index: int) -> void:
+	var sky := ShaderMaterial.new()
+	sky.shader = preload("res://shaders/concept_sky.gdshader")
+	if index == 0:
+		sky.set_shader_parameter("zenith", Color(.12,.22,.32))
+		sky.set_shader_parameter("horizon", Color(.87,.57,.33))
+		# The sun sits between the two nearest ridges so the disc clears the skyline.
+		sky.set_shader_parameter("disc_center", Vector2(.30,.63))
+		sky.set_shader_parameter("disc_radius", .026)
+	elif index == 1:
+		sky.set_shader_parameter("zenith", Color(.025,.065,.14))
+		sky.set_shader_parameter("horizon", Color(.22,.33,.42))
+		sky.set_shader_parameter("disc_color", Color(.82,.88,.80))
+		# Above the nearest ridge crests; the old height hid the disc behind rock.
+		sky.set_shader_parameter("disc_center", Vector2(.64,.72))
+		sky.set_shader_parameter("disc_radius", .026)
+		sky.set_shader_parameter("night", 1.0)
+	else:
+		sky.set_shader_parameter("zenith", Color(.045,.085,.18))
+		sky.set_shader_parameter("horizon", Color(.49,.32,.28))
+		sky.set_shader_parameter("disc_radius", 0.0)
+		sky.set_shader_parameter("night", .65)
+	# Local to this act's root. It used to reuse the act-one world x, which pushed
+	# acts two and three off-screen; the layer also covers the mist ribbon span.
+	_quad(parent, Vector3(10,-.8,-24), Vector2(26,22), sky).name = "LayeredSky"
+	for layer in range(4):
+		var st := SurfaceTool.new()
+		st.begin(Mesh.PRIMITIVE_TRIANGLES)
+		var last := Vector3(-1,-3,-21+layer*3)
+		for i in range(101):
+			var x: float = -1 + i*.22
+			var peak: float = 1.9+sin(x*.31+index*2+layer)*.85+sin(x*.87+layer*1.8)*.43+sin(x*2.3+layer)*.15
+			peak += (3-layer)*.35
+			var point := Vector3(x,peak,-21+layer*3)
+			if i > 0:
+				for vertex: Vector3 in [last, point, Vector3(last.x,-18,last.z), point, Vector3(x,-18,point.z), Vector3(last.x,-18,last.z)]: st.add_vertex(vertex)
+			last = point
+		st.generate_normals()
+		var ridge := MeshInstance3D.new()
+		ridge.mesh = st.commit()
+		var tint: Color = Color(.25,.34,.38).lerp(Color(.065,.14,.17),layer/3.0)
+		if index == 0: tint = Color(.49,.43,.38).lerp(Color(.13,.24,.25),layer/3.0)
+		var haze := ShaderMaterial.new()
+		haze.shader = preload("res://shaders/mountain_haze.gdshader")
+		haze.set_shader_parameter("tint",tint)
+		ridge.material_override = haze
+		parent.add_child(ridge)
+	for i in range(3):
+		var mist := ShaderMaterial.new()
+		mist.shader = preload("res://shaders/mist_ribbon.gdshader")
+		mist.set_shader_parameter("strength", .14 if index != 1 else .08)
+		_quad(parent,Vector3(10,-.3+i*.8,-11-i*3),Vector2(21,1.2),mist)
+
+
+func _tree(parent: Node3D, at: Vector3, height: float, tint: Color) -> void:
+	var bark: Material = _surface(Color(.20,.16,.115),2)
+	var trunk: Vector3 = at + Vector3(-.15,height*.61,0)
+	_rod(parent,at,at+Vector3(.07,height*.3,.04),height*.045,bark)
+	_rod(parent,at+Vector3(.07,height*.3,.04),trunk,height*.032,bark)
+	var ends: Array[Vector3] = []
+	for j in range(8):
+		var angle: float = j*TAU/8+.3
+		var end: Vector3 = at+Vector3(cos(angle)*height*.31,height*(.72+rng.randf()*.16),sin(angle)*height*.20)
+		var elbow: Vector3 = trunk.lerp(end,.56)+Vector3(0,.16,0)
+		_rod(parent,trunk,elbow,height*.014,bark)
+		_rod(parent,elbow,end,height*.007,bark)
+		ends.append(end)
+	var leaves := MultiMeshInstance3D.new()
+	var multimesh := MultiMesh.new()
+	multimesh.transform_format = MultiMesh.TRANSFORM_3D
+	multimesh.use_colors = true
+	var leaf := SphereMesh.new()
+	leaf.radius = 1
+	leaf.height = 2
+	leaf.radial_segments = 7
+	leaf.rings = 3
+	multimesh.mesh = leaf
+	multimesh.instance_count = 520
+	for i in range(520):
+		var center: Vector3 = ends[i%8]
+		var angle: float = rng.randf()*TAU
+		var spread: float = sqrt(rng.randf())*height*.19
+		var point: Vector3 = center + Vector3(cos(angle)*spread,rng.randf_range(-.16,.25)*height*.45,sin(angle)*spread*.55)
+		var scale := Vector3(rng.randf_range(.11,.25),rng.randf_range(.045,.12),rng.randf_range(.09,.19))*height/4
+		var basis := Basis.from_euler(Vector3(rng.randf_range(-.4,.4),angle,rng.randf_range(-.3,.3))).scaled(scale)
+		multimesh.set_instance_transform(i,Transform3D(basis,point))
+		multimesh.set_instance_color(i,tint*rng.randf_range(.70,1.4))
+	leaves.multimesh = multimesh
+	var foliage := StandardMaterial3D.new()
+	foliage.vertex_color_use_as_albedo = true
+	foliage.roughness = .86
+	leaves.material_override = foliage
+	leaves.name = "BroadleafCanopy"
+	parent.add_child(leaves)
+
+
+func _roof_detail(parent: Node3D, center: float, width: float, y: float, z: float, depth: float) -> void:
+	var tile: Material = _surface(Color(.18,.25,.27),0)
+	var edge: Material = _surface(Color(.29,.32,.28),0)
+	var timber: Material = _surface(Color(.28,.16,.08),2)
+	var count: int = int(width/.19)
+	for i in range(count):
+		var x: float = center-width*.5+(i+.5)*width/count
+		for row in range(4):
+			var t: float = row/4.0
+			var t2: float = (row+1)/4.0
+			var a := Vector3(x,y-.42+pow(t,1.45)*.42,z+depth*.52*(1-t))
+			var b := Vector3(x,y-.42+pow(t2,1.45)*.42,z+depth*.52*(1-t2)+.035)
+			_rod(parent,a,b,.045,tile)
+		_rod(parent,Vector3(x,y-.43,z+depth*.52),Vector3(x,y-.43,z+depth*.52+.055),.058,edge)
+		if i%3==0:
+			_box(parent,Vector3(x,y-.66,z+depth*.40),Vector3(.08,.20,.22),timber)
+			_box(parent,Vector3(x,y-.76,z+depth*.35),Vector3(.26,.08,.28),timber)
+	for side in [-1,1]:
+		_rod(parent,Vector3(center+side*width*.5,y,z),Vector3(center+side*(width*.5+.24),y+.19,z),.075,tile)
+
+
+func _puddle(parent: Node3D, at: Vector3, dimensions: Vector2, warm: float) -> void:
+	var material := ShaderMaterial.new()
+	material.shader = preload("res://shaders/courtyard_puddle.gdshader")
+	material.set_shader_parameter("warm", warm)
+	var puddle: MeshInstance3D = _quad(parent,at,dimensions,material)
+	puddle.rotation.x = -PI/2
+
+
+func _growth(parent: Node3D, at: Vector3, length: float) -> void:
+	var stems: Material = _flat(Color(.22,.26,.12))
+	var leaves: Material = _flat(Color(.19,.29,.14))
+	for i in range(6):
+		var x: float = at.x + rng.randf_range(-.3,.3)
+		var end := Vector3(x,at.y-length*rng.randf_range(.45,1),at.z+.12)
+		_rod(parent,Vector3(x,at.y,at.z),end,.008,stems)
+		for j in range(5):
+			var point: Vector3 = Vector3(x,at.y,at.z).lerp(end,j/5.0)
+			_rock(parent,point,Vector3(.12,.05,.08),leaves)
+
+
+func _misty_court() -> void:
+	var parent: Node3D = scenes[0]
+	_tree(parent,Vector3(1.2,0,-4.2),4.5,Color(.26,.32,.18))
+	_tree(parent,Vector3(18.3,0,-4.6),5.2,Color(.20,.29,.19))
+	_roof_detail(parent,13.55,6.75,4.48,-2.9,2.3)
+	var stone: Material = _surface(Color(.31,.34,.30),0)
+	for i in range(23):
+		var x: float = .35+i*.34
+		_rock(parent,Vector3(x,.10,-2.9),Vector3(.31,rng.randf_range(.15,.31),.28),stone)
+	for x in [2.7,6.3,10.7,16.4]: _growth(parent,Vector3(x,2.5 if x<8 else 3.8,-1.95),.8)
+	for x in [3.6,6.4,11.2,16.4]: _puddle(parent,Vector3(x,.013,1.65),Vector2(1.7,.57),.65)
+	# Sunset rim light balances the cool fog; it does not bleach the inscription.
+	var sunset := OmniLight3D.new()
+	sunset.position = Vector3(4.5,5,-2)
+	sunset.light_color = Color(1,.62,.33)
+	sunset.light_energy = 1.15
+	sunset.omni_range = 12
+	parent.add_child(sunset)
+
+
+func _creek_valley() -> void:
+	var parent: Node3D = scenes[1]
+	var cliff: Material = _surface(Color(.23,.31,.34),0)
+	for side in [4.5,18.5]:
+		for i in range(15):
+			var x: float = side + (i%5-2)*.60
+			var y: float = -1.0+(i/5)*1.65
+			_rock(parent,Vector3(x,y,-6.6),Vector3(.95,rng.randf_range(2.7,4.3),1.5),cliff)
+	_tree(parent,Vector3(1.5,0,-4.2),4.8,Color(.16,.27,.24))
+	_tree(parent,Vector3(9.9,0,-4.5),4.9,Color(.13,.26,.24))
+	_tree(parent,Vector3(19.7,.1,-4.0),4.4,Color(.15,.28,.22))
+	var falling := ShaderMaterial.new()
+	falling.shader = preload("res://shaders/waterfall.gdshader")
+	waterfall = MeshInstance3D.new()
+	var stream := SurfaceTool.new()
+	stream.begin(Mesh.PRIMITIVE_TRIANGLES)
+	# Gravity spreads the falling water: narrow source, broad foot, no parallel-sided sheet.
+	for row in range(32):
+		for col in range(8):
+			for corner in [Vector2(0,0),Vector2(0,1),Vector2(1,0),Vector2(1,0),Vector2(0,1),Vector2(1,1)]:
+				var u: float = (col+corner.x)/8.0
+				var v: float = (row+corner.y)/32.0
+				var width: float = lerpf(.18,1.35,pow(v,1.35))
+				stream.set_uv(Vector2(u,v))
+				stream.add_vertex(Vector3((u-.5)*width,3.5-v*7,.035*sin(v*14)*v))
+	stream.generate_normals()
+	waterfall.mesh = stream.commit()
+	waterfall.position = Vector3(17.2,1.2,-5.7)
+	waterfall.material_override = falling
+	waterfall.set_meta("top_width",.18)
+	waterfall.set_meta("bottom_width",1.35)
+	parent.add_child(waterfall)
+	waterfall.name = "CliffWaterfall"
+	var spray := ShaderMaterial.new()
+	spray.shader = preload("res://shaders/mist_ribbon.gdshader")
+	spray.set_shader_parameter("strength",.26)
+	_quad(parent,Vector3(17.2,-1.95,-5.25),Vector2(1.9,.85),spray)
+	_puddle(parent,Vector3(8.5,.015,1.4),Vector2(1.9,.55),0)
+	_puddle(parent,Vector3(19,.015,1.5),Vector2(1.2,.45),0)
+	# Two small old stone piles sit below the deck, never across the traversable lane.
+	for x in [12.5,17.6]:
+		for row in range(4):
+			for col in range(3):
+				_rock(parent,Vector3(x+(col-1)*.36,-.45-row*.45,-.75),Vector3(.43,.46,.6),cliff)
+	for x in [3.5,7.4,18.7]: _growth(parent,Vector3(x,1.4,-3.0),.9)
+
+
+func _lamp_court() -> void:
+	var parent: Node3D = scenes[2]
+	_tree(parent,Vector3(1.7,.1,-3.5),4.1,Color(.24,.32,.17))
+	_tree(parent,Vector3(18.8,.1,-3.6),4.6,Color(.23,.30,.16))
+	_roof_detail(parent,10,7,4.65,-2.65,3.1)
+	_roof_detail(parent,10,13.6,6.72,-6,2.7)
+	_roof_detail(parent,17.2,5,3.77,-3,2.4)
+	_roof_detail(parent,5.7,2.8,3.67,-3.1,2.2)
+	for x in [2.8,5.3,8.0,11.3,14.5,17.4]:
+		_puddle(parent,Vector3(x,.026,1.65),Vector2(1.8,.72),1)
+	var bronze: Material = _surface(Color(.44,.30,.12),0)
+	# Carved balustrade behind the playable path and around the stele platform.
+	for x in [7.8,8.35,9.65,10.2]:
+		_box(parent,Vector3(x,.48,-1.85),Vector3(.17,.61,.17),bronze)
+		_rock(parent,Vector3(x,.83,-1.85),Vector3(.21,.20,.21),bronze)
+	for interval in [Vector2(7.8,8.35),Vector2(9.65,10.2)]:
+		_rod(parent,Vector3(interval.x,.67,-1.85),Vector3(interval.y,.67,-1.85),.045,bronze)
+	_town(parent)
+	var warm := OmniLight3D.new()
+	warm.position = Vector3(10,3.5,1.7)
+	warm.light_color = Color(1,.65,.29)
+	warm.light_energy = .55
+	warm.omni_range = 12
+	parent.add_child(warm)
+
+
+func _town(parent: Node3D) -> void:
+	var tiles: Material = _flat(Color(.15,.23,.28),true)
+	var walls: Material = _flat(Color(.27,.29,.28),true)
+	var houses: int = 60
+	var lamps_per_house: int = 3
+	var lamps := MultiMesh.new()
+	lamps.transform_format = MultiMesh.TRANSFORM_3D
+	var mesh := SphereMesh.new()
+	mesh.radius = .026
+	mesh.height = .052
+	mesh.radial_segments = 6
+	mesh.rings = 3
+	lamps.mesh = mesh
+	lamps.instance_count = houses * lamps_per_house
+	for i in range(houses):
+		# Above the pavilion eave (y 6.7) and pushed past the ridge line: in the
+		# concept the town sits beyond the mountains, not on the courtyard floor.
+		var x: float = rng.randf_range(.2,19.8)
+		var y: float = rng.randf_range(5.4,7.2)
+		var z: float = rng.randf_range(-22,-17)
+		var w: float = rng.randf_range(.20,.42)
+		_box(parent,Vector3(x,y,z),Vector3(w,.24,.21),walls)
+		for side in [-1,1]:
+			var roof: MeshInstance3D = _box(parent,Vector3(x+side*w*.23,y+.17,z),Vector3(w*.6,.034,.30),tiles)
+			roof.rotation.z = side*-.23
+		for j in range(lamps_per_house): lamps.set_instance_transform(i*lamps_per_house+j,Transform3D(Basis.IDENTITY,Vector3(x+(j-1)*w*.24,y-.03,z+.14)))
+	town_lights = MultiMeshInstance3D.new()
+	town_lights.name = "ValleyTownLights"
+	town_lights.multimesh = lamps
+	town_lights.material_override = _flat(Color(.94,.55,.19),true,true)
+	parent.add_child(town_lights)
+
+
+func _batch_static() -> void:
+	# Merge repeated stone/timber/tile meshes per material to keep native scenery inexpensive.
+	var groups: Dictionary = {}
+	var nodes: Array[Node] = find_children("*","MeshInstance3D",true,false)
+	for node: MeshInstance3D in nodes:
+		if node.material_override is ShaderMaterial and node.material_override.shader != SURFACE: continue
+		var material: Material = node.material_override
+		if not groups.has(material): groups[material] = []
+		groups[material].append(node)
+	for material: Material in groups:
+		var st := SurfaceTool.new()
+		st.begin(Mesh.PRIMITIVE_TRIANGLES)
+		for node: MeshInstance3D in groups[material]:
+			st.append_from(node.mesh,0,global_transform.affine_inverse()*node.global_transform)
+			node.get_parent().remove_child(node)
+			node.free()
+		var batch := MeshInstance3D.new()
+		batch.mesh = st.commit()
+		batch.material_override = material
+		add_child(batch)
+		static_meshes.append(batch)

@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('数媒/cuan-game/scripts/lantern_garden.gd');s=p.read_text(encoding='utf-8').replace('\t_tablet.visible = bridge.tablet_delivered\n\tif tablet_arriving','\t_tablet.visible = bridge.tablet_delivered\n\tif not bridge.tablet_delivered:\n\t\ttablet_arriving=false\n\t\tarrival_elapsed=0\n\tif tablet_arriving',1).replace('func _raise_tablet() -> void:\n\ttablet_placed', 'func _raise_tablet() -> void:\n\ttablet_arriving=false\n\ttablet_placed');p.write_text(s,encoding='utf-8')

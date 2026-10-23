@@ -1,0 +1,32 @@
+{
+  "blender": "5.2.2 LTS",
+  "character": "石阿朵",
+  "revision": "refined-v2",
+  "bones": 25,
+  "vertices": 119695,
+  "polygons": 114137,
+  "animations": [
+    "carry",
+    "idle",
+    "inspect",
+    "jump",
+    "push",
+    "walk"
+  ],
+  "skins": 1,
+  "uv_layers": 1,
+  "vertex_ao_samples": 64,
+  "glb": "C:\\Users\\26845\\Documents\\ChatGPT\\“爨境，共生”游戏开发，民族交融\\数媒\\cuan-game\\assets\\characters\\shi_aduo\\shi_aduo_refined.glb",
+  "details": [
+    "shaped cheeks and lips",
+    "iris and lid detail",
+    "swept hair and coiled bun",
+    "thick draped head cloth",
+    "rolled cuffs and lining",
+    "thick draped apron and pocket",
+    "satin stitches",
+    "gripping fingers and nails",
+    "chamfered mallet and grain",
+    "beveled chisel"
+  ]
+}

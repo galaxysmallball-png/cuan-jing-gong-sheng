@@ -1,0 +1,1545 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/space01_visual.gd" id="script"]
+
+[ext_resource type="Shader" path="res://shaders/weathered_surface.gdshader" id="surface"]
+
+[ext_resource type="Shader" path="res://shaders/mist_ribbon.gdshader" id="mist"]
+
+[sub_resource type="BoxMesh" id="box"]
+size = Vector3(1, 1, 1)
+
+[sub_resource type="QuadMesh" id="quad"]
+size = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="stone"]
+shader = ExtResource("surface")
+shader_parameter/base_color = Color(0.22, 0.27, 0.27, 1)
+shader_parameter/pattern = 0.0
+
+[sub_resource type="ShaderMaterial" id="wall"]
+shader = ExtResource("surface")
+shader_parameter/base_color = Color(0.19, 0.24, 0.25, 1)
+shader_parameter/pattern = 1.0
+
+[sub_resource type="ShaderMaterial" id="wood"]
+shader = ExtResource("surface")
+shader_parameter/base_color = Color(0.14, 0.105, 0.075, 1)
+shader_parameter/pattern = 2.0
+
+[sub_resource type="ShaderMaterial" id="slate"]
+shader = ExtResource("surface")
+shader_parameter/base_color = Color(0.13, 0.18, 0.20, 1)
+shader_parameter/pattern = 0.0
+
+[sub_resource type="StandardMaterial3D" id="dark"]
+albedo_color = Color(0.025, 0.045, 0.055, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="leaf"]
+albedo_color = Color(0.12, 0.19, 0.15, 1)
+roughness = 1.0
+
+[sub_resource type="ShaderMaterial" id="fog"]
+shader = ExtResource("mist")
+shader_parameter/strength = 0.1
+
+[node name="VisualSample" type="Node3D"]
+script = ExtResource("script")
+
+[node name="Paving" type="Node3D" parent="."]
+
+[node name="Masonry" type="Node3D" parent="."]
+
+[node name="Timber" type="Node3D" parent="."]
+
+[node name="DisplayFrames" type="Node3D" parent="."]
+
+[node name="Foreground" type="Node3D" parent="."]
+
+[node name="Growth" type="Node3D" parent="."]
+
+[node name="Mist" type="Node3D" parent="."]
+
+[node name="Slab0_0" type="MeshInstance3D" parent="Paving"]
+position = Vector3(0.625, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_1" type="MeshInstance3D" parent="Paving"]
+position = Vector3(1.875, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_2" type="MeshInstance3D" parent="Paving"]
+position = Vector3(3.125, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_3" type="MeshInstance3D" parent="Paving"]
+position = Vector3(4.375, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_4" type="MeshInstance3D" parent="Paving"]
+position = Vector3(5.625, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_5" type="MeshInstance3D" parent="Paving"]
+position = Vector3(6.875, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_6" type="MeshInstance3D" parent="Paving"]
+position = Vector3(8.125, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_7" type="MeshInstance3D" parent="Paving"]
+position = Vector3(9.375, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_8" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10.625, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_9" type="MeshInstance3D" parent="Paving"]
+position = Vector3(11.875, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_10" type="MeshInstance3D" parent="Paving"]
+position = Vector3(13.125, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_11" type="MeshInstance3D" parent="Paving"]
+position = Vector3(14.375, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_12" type="MeshInstance3D" parent="Paving"]
+position = Vector3(15.625, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_13" type="MeshInstance3D" parent="Paving"]
+position = Vector3(16.875, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_14" type="MeshInstance3D" parent="Paving"]
+position = Vector3(18.125, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab0_15" type="MeshInstance3D" parent="Paving"]
+position = Vector3(19.375, -0.04, -2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_0" type="MeshInstance3D" parent="Paving"]
+position = Vector3(0.625, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_1" type="MeshInstance3D" parent="Paving"]
+position = Vector3(1.875, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_2" type="MeshInstance3D" parent="Paving"]
+position = Vector3(3.125, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_3" type="MeshInstance3D" parent="Paving"]
+position = Vector3(4.375, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_4" type="MeshInstance3D" parent="Paving"]
+position = Vector3(5.625, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_5" type="MeshInstance3D" parent="Paving"]
+position = Vector3(6.875, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_6" type="MeshInstance3D" parent="Paving"]
+position = Vector3(8.125, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_7" type="MeshInstance3D" parent="Paving"]
+position = Vector3(9.375, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_8" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10.625, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_9" type="MeshInstance3D" parent="Paving"]
+position = Vector3(11.875, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_10" type="MeshInstance3D" parent="Paving"]
+position = Vector3(13.125, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_11" type="MeshInstance3D" parent="Paving"]
+position = Vector3(14.375, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_12" type="MeshInstance3D" parent="Paving"]
+position = Vector3(15.625, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_13" type="MeshInstance3D" parent="Paving"]
+position = Vector3(16.875, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_14" type="MeshInstance3D" parent="Paving"]
+position = Vector3(18.125, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab1_15" type="MeshInstance3D" parent="Paving"]
+position = Vector3(19.375, -0.04, -1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_0" type="MeshInstance3D" parent="Paving"]
+position = Vector3(0.625, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_1" type="MeshInstance3D" parent="Paving"]
+position = Vector3(1.875, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_2" type="MeshInstance3D" parent="Paving"]
+position = Vector3(3.125, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_3" type="MeshInstance3D" parent="Paving"]
+position = Vector3(4.375, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_4" type="MeshInstance3D" parent="Paving"]
+position = Vector3(5.625, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_5" type="MeshInstance3D" parent="Paving"]
+position = Vector3(6.875, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_6" type="MeshInstance3D" parent="Paving"]
+position = Vector3(8.125, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_7" type="MeshInstance3D" parent="Paving"]
+position = Vector3(9.375, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_8" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10.625, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_9" type="MeshInstance3D" parent="Paving"]
+position = Vector3(11.875, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_10" type="MeshInstance3D" parent="Paving"]
+position = Vector3(13.125, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_11" type="MeshInstance3D" parent="Paving"]
+position = Vector3(14.375, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_12" type="MeshInstance3D" parent="Paving"]
+position = Vector3(15.625, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_13" type="MeshInstance3D" parent="Paving"]
+position = Vector3(16.875, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_14" type="MeshInstance3D" parent="Paving"]
+position = Vector3(18.125, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab2_15" type="MeshInstance3D" parent="Paving"]
+position = Vector3(19.375, -0.04, -0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_0" type="MeshInstance3D" parent="Paving"]
+position = Vector3(0.625, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_1" type="MeshInstance3D" parent="Paving"]
+position = Vector3(1.875, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_2" type="MeshInstance3D" parent="Paving"]
+position = Vector3(3.125, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_3" type="MeshInstance3D" parent="Paving"]
+position = Vector3(4.375, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_4" type="MeshInstance3D" parent="Paving"]
+position = Vector3(5.625, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_5" type="MeshInstance3D" parent="Paving"]
+position = Vector3(6.875, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_6" type="MeshInstance3D" parent="Paving"]
+position = Vector3(8.125, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_7" type="MeshInstance3D" parent="Paving"]
+position = Vector3(9.375, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_8" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10.625, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_9" type="MeshInstance3D" parent="Paving"]
+position = Vector3(11.875, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_10" type="MeshInstance3D" parent="Paving"]
+position = Vector3(13.125, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_11" type="MeshInstance3D" parent="Paving"]
+position = Vector3(14.375, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_12" type="MeshInstance3D" parent="Paving"]
+position = Vector3(15.625, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_13" type="MeshInstance3D" parent="Paving"]
+position = Vector3(16.875, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_14" type="MeshInstance3D" parent="Paving"]
+position = Vector3(18.125, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab3_15" type="MeshInstance3D" parent="Paving"]
+position = Vector3(19.375, -0.04, 0.475)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_0" type="MeshInstance3D" parent="Paving"]
+position = Vector3(0.625, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_1" type="MeshInstance3D" parent="Paving"]
+position = Vector3(1.875, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_2" type="MeshInstance3D" parent="Paving"]
+position = Vector3(3.125, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_3" type="MeshInstance3D" parent="Paving"]
+position = Vector3(4.375, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_4" type="MeshInstance3D" parent="Paving"]
+position = Vector3(5.625, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_5" type="MeshInstance3D" parent="Paving"]
+position = Vector3(6.875, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_6" type="MeshInstance3D" parent="Paving"]
+position = Vector3(8.125, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_7" type="MeshInstance3D" parent="Paving"]
+position = Vector3(9.375, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_8" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10.625, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_9" type="MeshInstance3D" parent="Paving"]
+position = Vector3(11.875, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_10" type="MeshInstance3D" parent="Paving"]
+position = Vector3(13.125, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_11" type="MeshInstance3D" parent="Paving"]
+position = Vector3(14.375, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_12" type="MeshInstance3D" parent="Paving"]
+position = Vector3(15.625, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_13" type="MeshInstance3D" parent="Paving"]
+position = Vector3(16.875, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_14" type="MeshInstance3D" parent="Paving"]
+position = Vector3(18.125, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab4_15" type="MeshInstance3D" parent="Paving"]
+position = Vector3(19.375, -0.04, 1.425)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_0" type="MeshInstance3D" parent="Paving"]
+position = Vector3(0.625, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_1" type="MeshInstance3D" parent="Paving"]
+position = Vector3(1.875, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_2" type="MeshInstance3D" parent="Paving"]
+position = Vector3(3.125, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_3" type="MeshInstance3D" parent="Paving"]
+position = Vector3(4.375, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_4" type="MeshInstance3D" parent="Paving"]
+position = Vector3(5.625, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_5" type="MeshInstance3D" parent="Paving"]
+position = Vector3(6.875, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_6" type="MeshInstance3D" parent="Paving"]
+position = Vector3(8.125, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_7" type="MeshInstance3D" parent="Paving"]
+position = Vector3(9.375, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_8" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10.625, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_9" type="MeshInstance3D" parent="Paving"]
+position = Vector3(11.875, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_10" type="MeshInstance3D" parent="Paving"]
+position = Vector3(13.125, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_11" type="MeshInstance3D" parent="Paving"]
+position = Vector3(14.375, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_12" type="MeshInstance3D" parent="Paving"]
+position = Vector3(15.625, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_13" type="MeshInstance3D" parent="Paving"]
+position = Vector3(16.875, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_14" type="MeshInstance3D" parent="Paving"]
+position = Vector3(18.125, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Slab5_15" type="MeshInstance3D" parent="Paving"]
+position = Vector3(19.375, -0.04, 2.375)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.22, 0.08, 0.92)
+
+[node name="Foundation" type="MeshInstance3D" parent="Paving"]
+position = Vector3(10, -0.5, 0)
+mesh = SubResource("box")
+material_override = SubResource("slate")
+scale = Vector3(20, 0.9, 6)
+
+[node name="FrontStep0" type="MeshInstance3D" parent="Foreground"]
+position = Vector3(10, -0.18, 2.9)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(20.4, 0.2, 0.45)
+
+[node name="FrontStep1" type="MeshInstance3D" parent="Foreground"]
+position = Vector3(10, -0.34, 3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(20.4, 0.2, 0.45)
+
+[node name="FrontStep2" type="MeshInstance3D" parent="Foreground"]
+position = Vector3(10, -0.5, 3.4)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(20.4, 0.2, 0.45)
+
+[node name="RearStoneWall" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(10, 2.75, -3.65)
+mesh = SubResource("box")
+material_override = SubResource("wall")
+scale = Vector3(20.4, 5.5, 0.65)
+
+[node name="DisplayRecess" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(13.5, 2.1, -3.27)
+mesh = SubResource("box")
+material_override = SubResource("dark")
+scale = Vector3(6.15, 4.15, 0.08)
+
+[node name="ArchStone0" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(16.6204, 1.39558, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 94.5)
+
+[node name="ArchStone1" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(16.5435, 1.88068, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 103.5)
+
+[node name="ArchStone2" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(16.3917, 2.3478, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 112.5)
+
+[node name="ArchStone3" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(16.1688, 2.78542, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 121.5)
+
+[node name="ArchStone4" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(15.8801, 3.18277, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 130.5)
+
+[node name="ArchStone5" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(15.5328, 3.53007, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 139.5)
+
+[node name="ArchStone6" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(15.1354, 3.81876, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 148.5)
+
+[node name="ArchStone7" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(14.6978, 4.04174, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 157.5)
+
+[node name="ArchStone8" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(14.2307, 4.19352, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 166.5)
+
+[node name="ArchStone9" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(13.7456, 4.27035, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 175.5)
+
+[node name="ArchStone10" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(13.2544, 4.27035, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 184.5)
+
+[node name="ArchStone11" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(12.7693, 4.19352, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 193.5)
+
+[node name="ArchStone12" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(12.3022, 4.04174, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 202.5)
+
+[node name="ArchStone13" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(11.8646, 3.81876, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 211.5)
+
+[node name="ArchStone14" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(11.4672, 3.53007, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 220.5)
+
+[node name="ArchStone15" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(11.1199, 3.18277, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 229.5)
+
+[node name="ArchStone16" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(10.8312, 2.78542, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 238.5)
+
+[node name="ArchStone17" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(10.6083, 2.3478, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 247.5)
+
+[node name="ArchStone18" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(10.4565, 1.88068, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 256.5)
+
+[node name="ArchStone19" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(10.3796, 1.39558, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.48, 0.36, 0.42)
+rotation_degrees = Vector3(0, 0, 265.5)
+
+[node name="ArchFoot10.37" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(10.37, 0.55, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.38, 1.1, 0.45)
+
+[node name="ArchFoot16.63" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(16.63, 0.55, -3.15)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.38, 1.1, 0.45)
+
+[node name="Plinth0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(0.7, 0.18, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.75, 0.36, 0.8)
+
+[node name="Post0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(0.7, 2.65, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.36, 4.7, 0.4)
+
+[node name="Capital0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(0.7, 4.83, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.25, 0.75)
+
+[node name="Brace0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(1.05, 4.47, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.18, 0.2)
+rotation_degrees = Vector3(0, 0, 45)
+
+[node name="Plinth1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(5.8, 0.18, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.75, 0.36, 0.8)
+
+[node name="Post1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(5.8, 2.65, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.36, 4.7, 0.4)
+
+[node name="Capital1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(5.8, 4.83, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.25, 0.75)
+
+[node name="Brace1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(6.15, 4.47, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.18, 0.2)
+rotation_degrees = Vector3(0, 0, 45)
+
+[node name="Plinth2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10.5, 0.18, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.75, 0.36, 0.8)
+
+[node name="Post2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10.5, 2.65, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.36, 4.7, 0.4)
+
+[node name="Capital2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10.5, 4.83, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.25, 0.75)
+
+[node name="Brace2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10.85, 4.47, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.18, 0.2)
+rotation_degrees = Vector3(0, 0, 45)
+
+[node name="Plinth3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(17, 0.18, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.75, 0.36, 0.8)
+
+[node name="Post3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(17, 2.65, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.36, 4.7, 0.4)
+
+[node name="Capital3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(17, 4.83, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.25, 0.75)
+
+[node name="Brace3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(17.35, 4.47, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.18, 0.2)
+rotation_degrees = Vector3(0, 0, 45)
+
+[node name="Plinth4" type="MeshInstance3D" parent="Timber"]
+position = Vector3(19.7, 0.18, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(0.75, 0.36, 0.8)
+
+[node name="Post4" type="MeshInstance3D" parent="Timber"]
+position = Vector3(19.7, 2.65, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.36, 4.7, 0.4)
+
+[node name="Capital4" type="MeshInstance3D" parent="Timber"]
+position = Vector3(19.7, 4.83, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.25, 0.75)
+
+[node name="Brace4" type="MeshInstance3D" parent="Timber"]
+position = Vector3(20.05, 4.47, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.9, 0.18, 0.2)
+rotation_degrees = Vector3(0, 0, 45)
+
+[node name="MainBeam" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10, 5, -2.8)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(20.5, 0.35, 0.6)
+
+[node name="FrontBeam" type="MeshInstance3D" parent="Foreground"]
+position = Vector3(10, 5.35, 2.7)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(20.5, 0.5, 0.55)
+
+[node name="LeftForegroundPost" type="MeshInstance3D" parent="Foreground"]
+position = Vector3(0.15, 2.6, 2.65)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.46, 5.5, 0.6)
+
+[node name="RoofRib0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(0, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(1.7, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.4, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(5.1, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib4" type="MeshInstance3D" parent="Timber"]
+position = Vector3(6.8, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib5" type="MeshInstance3D" parent="Timber"]
+position = Vector3(8.5, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib6" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10.2, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib7" type="MeshInstance3D" parent="Timber"]
+position = Vector3(11.9, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib8" type="MeshInstance3D" parent="Timber"]
+position = Vector3(13.6, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib9" type="MeshInstance3D" parent="Timber"]
+position = Vector3(15.3, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib10" type="MeshInstance3D" parent="Timber"]
+position = Vector3(17, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofRib11" type="MeshInstance3D" parent="Timber"]
+position = Vector3(18.7, 5.15, -0.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.13, 0.19, 6)
+
+[node name="RoofShadow" type="MeshInstance3D" parent="Timber"]
+position = Vector3(10, 5.65, -0.1)
+mesh = SubResource("box")
+material_override = SubResource("slate")
+scale = Vector3(20.5, 0.15, 6.1)
+
+[node name="WindowShadow" type="MeshInstance3D" parent="Masonry"]
+position = Vector3(3.1, 2.85, -3.25)
+mesh = SubResource("box")
+material_override = SubResource("dark")
+scale = Vector3(3.1, 2.6, 0.08)
+
+[node name="WindowBar0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(1.75, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(2.13, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(2.51, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(2.89, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar4" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.27, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar5" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.65, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar6" type="MeshInstance3D" parent="Timber"]
+position = Vector3(4.03, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowBar7" type="MeshInstance3D" parent="Timber"]
+position = Vector3(4.41, 2.85, -3.1)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.055, 2.55, 0.08)
+
+[node name="WindowRail0" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.1, 1.7, -3.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(3.2, 0.055, 0.1)
+
+[node name="WindowRail1" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.1, 2.46, -3.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(3.2, 0.055, 0.1)
+
+[node name="WindowRail2" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.1, 3.22, -3.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(3.2, 0.055, 0.1)
+
+[node name="WindowRail3" type="MeshInstance3D" parent="Timber"]
+position = Vector3(3.1, 3.98, -3.05)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(3.2, 0.055, 0.1)
+
+[node name="DisplayBase0" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(12.25, 0.1, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.65, 0.2, 0.85)
+
+[node name="DisplaySide0_-1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(11.61, 1.2, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.12, 2.14, 0.32)
+
+[node name="DisplaySide0_1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(12.89, 1.2, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.12, 2.14, 0.32)
+
+[node name="DisplayRail0_-1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(12.25, 0.16, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(1.4, 0.12, 0.32)
+
+[node name="DisplayRail0_1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(12.25, 2.24, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(1.4, 0.12, 0.32)
+
+[node name="DisplayBase1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(14.75, 0.1, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("stone")
+scale = Vector3(1.9, 0.2, 0.85)
+
+[node name="DisplaySide1_-1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(13.985, 1.5, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.12, 2.74, 0.32)
+
+[node name="DisplaySide1_1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(15.515, 1.5, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(0.12, 2.74, 0.32)
+
+[node name="DisplayRail1_-1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(14.75, 0.16, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(1.65, 0.12, 0.32)
+
+[node name="DisplayRail1_1" type="MeshInstance3D" parent="DisplayFrames"]
+position = Vector3(14.75, 2.84, -2.35)
+mesh = SubResource("box")
+material_override = SubResource("wood")
+scale = Vector3(1.65, 0.12, 0.32)
+
+[node name="VineStem0" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.3, 3, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 0)
+
+[node name="VineLeaf0" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.17, 3, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem1" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.39663, 2.88, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 21.0368)
+
+[node name="VineLeaf1" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.52663, 2.88, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem2" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.44782, 2.76, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 22.7324)
+
+[node name="VineLeaf2" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.31782, 2.76, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem3" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.42948, 2.64, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 3.528)
+
+[node name="VineLeaf3" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.55948, 2.64, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem4" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.35025, 2.52, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -18.9201)
+
+[node name="VineLeaf4" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.22025, 2.52, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem5" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.24738, 2.4, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -23.9731)
+
+[node name="VineLeaf5" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.37738, 2.4, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem6" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.16926, 2.28, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -6.98539)
+
+[node name="VineLeaf6" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.03926, 2.28, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem7" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.15263, 2.16, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 16.4247)
+
+[node name="VineLeaf7" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.28263, 2.16, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem8" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.20531, 2.04, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 24.734)
+
+[node name="VineLeaf8" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.07531, 2.04, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem9" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.30252, 1.92, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 10.303)
+
+[node name="VineLeaf9" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.43252, 1.92, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem10" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.39855, 1.8, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -13.6005)
+
+[node name="VineLeaf10" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.26855, 1.8, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem11" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.44823, 1.68, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -24.9998)
+
+[node name="VineLeaf11" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.57823, 1.68, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem12" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.42819, 1.56, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -13.4143)
+
+[node name="VineLeaf12" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.29819, 1.56, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem13" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.34786, 1.44, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 10.5042)
+
+[node name="VineLeaf13" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.47786, 1.44, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem14" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.24503, 1.32, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 24.7652)
+
+[node name="VineLeaf14" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.11503, 1.32, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem15" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.16805, 1.2, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, 16.2572)
+
+[node name="VineLeaf15" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.29805, 1.2, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="VineStem16" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.15312, 1.08, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -7.19758)
+
+[node name="VineLeaf16" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.02312, 1.08, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, -35)
+
+[node name="VineStem17" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.20728, 0.96, -3)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.035, 0.18, 0.045)
+rotation_degrees = Vector3(0, 0, -24.0349)
+
+[node name="VineLeaf17" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.33728, 0.96, -2.99)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.22, 0.1, 0.05)
+rotation_degrees = Vector3(0, 0, 35)
+
+[node name="EdgeMoss0" type="MeshInstance3D" parent="Growth"]
+position = Vector3(1, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss1" type="MeshInstance3D" parent="Growth"]
+position = Vector3(2.36, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss2" type="MeshInstance3D" parent="Growth"]
+position = Vector3(3.72, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss3" type="MeshInstance3D" parent="Growth"]
+position = Vector3(5.08, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss4" type="MeshInstance3D" parent="Growth"]
+position = Vector3(6.44, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss5" type="MeshInstance3D" parent="Growth"]
+position = Vector3(7.8, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss6" type="MeshInstance3D" parent="Growth"]
+position = Vector3(9.16, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss7" type="MeshInstance3D" parent="Growth"]
+position = Vector3(10.52, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss8" type="MeshInstance3D" parent="Growth"]
+position = Vector3(11.88, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss9" type="MeshInstance3D" parent="Growth"]
+position = Vector3(13.24, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss10" type="MeshInstance3D" parent="Growth"]
+position = Vector3(14.6, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss11" type="MeshInstance3D" parent="Growth"]
+position = Vector3(15.96, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss12" type="MeshInstance3D" parent="Growth"]
+position = Vector3(17.32, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="EdgeMoss13" type="MeshInstance3D" parent="Growth"]
+position = Vector3(18.68, 0.02, -2.5)
+mesh = SubResource("box")
+material_override = SubResource("leaf")
+scale = Vector3(0.45, 0.055, 0.18)
+
+[node name="Ribbon0" type="MeshInstance3D" parent="Mist"]
+position = Vector3(6, 0.3, 1.8)
+mesh = SubResource("quad")
+material_override = SubResource("fog")
+scale = Vector3(12, 0.7, 1)
+
+[node name="Ribbon1" type="MeshInstance3D" parent="Mist"]
+position = Vector3(15, 0.45, 1.4)
+mesh = SubResource("quad")
+material_override = SubResource("fog")
+scale = Vector3(10, 0.7, 1)
+
+[node name="Ribbon2" type="MeshInstance3D" parent="Mist"]
+position = Vector3(10, 0.65, -1.8)
+mesh = SubResource("quad")
+material_override = SubResource("fog")
+scale = Vector3(16, 0.7, 1)
+
+[node name="Moonlight" type="OmniLight3D" parent="."]
+position = Vector3(4.8, 3.7, -0.5)
+light_color = Color(0.37, 0.57, 0.72, 1)
+light_energy = 1.5
+omni_range = 9.0

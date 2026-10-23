@@ -1,0 +1,14 @@
+{
+  "source_reopened": true,
+  "bones": 22,
+  "animations": 6,
+  "packed_images": 2,
+  "all_vertices_weighted": true,
+  "accessory_parents_verified": {
+    "beam": "spine",
+    "sheath": "hips",
+    "headtie": "head"
+  },
+  "vertices": 62992,
+  "polygons": 60728
+}

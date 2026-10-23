@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/character_animation_controller.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/characters/pack_donkey/pack_donkey_rigged.glb" id="2"]
+
+[node name="PackDonkey" type="Node3D"]
+script = ExtResource("1")
+model_scene = ExtResource("2")
+skin_material_names = PackedStringArray("PackDonkey_GreyFur", "PackDonkey_PaleMuzzle")

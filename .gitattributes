@@ -1,0 +1,9 @@
+* text=auto
+*.png binary
+*.jpg binary
+*.webp binary
+*.glb binary
+*.blend binary
+*.ogv binary
+*.wav binary
+*.part binary

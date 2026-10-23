@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-22",
+  "result": "FINAL_WINDOWS_AND_ANDROID_PACKAGES_OK",
+  "scroll_final_art": {
+    "file": "assets/story/scroll_lights_single_taiwan_20261022.png",
+    "sha256": "9338dd277793d30c511c6fe9ddc47bb2cba73444d2818b0a2aef6c8354a938a7",
+    "lower_duplicate_removed": true,
+    "original_preserved": true,
+    "desktop_and_apk_resources_gpu_checked": true
+  },
+  "android": {
+    "version": "0.2.1",
+    "version_code": 3,
+    "minimum_sdk": 24,
+    "target_sdk": 36,
+    "abi": "arm64-v8a",
+    "same_signing_certificate_as_previous": true,
+    "certificate_sha256": "9c3a4198250e153941b993e6836426fc810e3eab941d0d7f6d0e93d834a67bcc",
+    "signed": true,
+    "physical_device_tested": false,
+    "apk_extracted_runtime_touch_test": true,
+    "launcher_from_user": true
+  },
+  "films": [
+    {
+      "name": "opening_story",
+      "placement": "启程后、选牌前",
+      "bytes": 35197142,
+      "sha256": "281af91b1ea97ce65b46487dd9f83aeb7cd6a29edab131c2dfcb0d6c7c8e983a"
+    },
+    {
+      "name": "chapter_01",
+      "placement": "第一关前",
+      "bytes": 52576062,
+      "sha256": "c60a97323e8884e94d3c675da8d2c13a44f1e13abe2544646bd3196ab7233b52"
+    },
+    {
+      "name": "chapter_02",
+      "placement": "第二关前",
+      "bytes": 47625987,
+      "sha256": "3910adf4832dc8347e223466ee6b0d98e87591f21b51a68c9b31394bb72ef213"
+    },
+    {
+      "name": "chapter_03",
+      "placement": "第三关碑立正落座后",
+      "bytes": 38966627,
+      "sha256": "0aaa39d4621ae510d5e7b86b63d7e04b676a3a15c866f9d00bce4c4e7bfb41db"
+    },
+    {
+      "name": "epilogue",
+      "placement": "读完共生长卷后",
+      "bytes": 115208146,
+      "sha256": "9036f239149b645f777aea7b8ca6f2c3dcdb45de5aed8bcd26349de992659353"
+    }
+  ],
+  "artifacts": {
+    "windows_zip": {
+      "bytes": 520142069,
+      "sha256": "68936a39c0658d49f4612e8976036b8006d82b3ae60c096d6f82ce7fa8f33a4c"
+    },
+    "windows_exe": {
+      "bytes": 109268480,
+      "sha256": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562"
+    },
+    "windows_pck": {
+      "bytes": 487751388,
+      "sha256": "0e364de8365967a4a1ff3d56d9b5ca9184b454b319f87b83ed4783249aee6f9e"
+    },
+    "android_apk": {
+      "bytes": 518152460,
+      "sha256": "5ba36b27ca06fde932669158755ffcba8fb0fd8efab64d7a686e2a6e7e0bf9ab"
+    }
+  }
+}

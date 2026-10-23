@@ -1,0 +1,10 @@
+{
+  "file": "folk_reed.wav",
+  "duration_seconds": 0.62,
+  "sample_rate": 32000,
+  "channels": 2,
+  "sha256": "82d7377a517e9210c3c7385778a73a3d07db1de88729611ad7f70d1f8d4c8306",
+  "rms_dbfs": -7.150430202484131,
+  "peak_dbfs": -3.2095656394958496,
+  "method": "Original additive reed synthesis; no traditional recording or sample"
+}

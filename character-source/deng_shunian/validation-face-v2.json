@@ -1,0 +1,19 @@
+{
+  "blender": "5.2.2 LTS",
+  "revision": "face-v2",
+  "bones": 24,
+  "vertices": 48096,
+  "polygons": 54944,
+  "animations": [
+    "carry",
+    "idle",
+    "inspect",
+    "jump",
+    "push",
+    "walk"
+  ],
+  "skins": 1,
+  "uv_layers": 1,
+  "glb": "C:\\Users\\26845\\Documents\\ChatGPT\\“爨境，共生”游戏开发，民族交融\\数媒\\cuan-game\\assets\\characters\\deng_shunian\\deng_shunian_face_v2.glb",
+  "refinement": "Continuous smooth face and neck, seated almond eyes, curved lids, integrated nose, soft mouth and curved hair"
+}

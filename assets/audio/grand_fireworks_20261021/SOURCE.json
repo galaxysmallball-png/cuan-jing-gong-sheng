@@ -1,0 +1,16 @@
+[
+  {
+    "file": "firework_launch.wav",
+    "seconds": 0.78,
+    "peak": 0.7,
+    "rms": 0.1823924088309872,
+    "sha256": "14a19cd669c0b6fe7ce5785455b23cef32192afbfba1ae1cd36c012cf4db052b"
+  },
+  {
+    "file": "firework_burst.wav",
+    "seconds": 2.85,
+    "peak": 0.7,
+    "rms": 0.07743280213381458,
+    "sha256": "a8c2dda74af368983b950392ea283ff4f6edcbd960e952af1ad09b59fd06211a"
+  }
+]

@@ -1,0 +1,13 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/party_follower.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/party_character_visual.tscn" id="2"]
+[sub_resource type="CapsuleShape3D" id="capsule"]
+radius = 0.27
+height = 1.4
+[node name="Follower" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1")
+[node name="Collision" type="CollisionShape3D" parent="."]
+shape = SubResource("capsule")
+[node name="Visual" parent="." instance=ExtResource("2")]

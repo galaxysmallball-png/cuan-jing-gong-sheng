@@ -1,0 +1,16 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/villager_character_controller.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/characters/pu_mo/pu_mo_rigged.glb" id="2"]
+
+[node name="PuMo" type="Node3D"]
+scale = Vector3(0.94, 0.94, 0.94)
+script = ExtResource("1")
+model_scene = ExtResource("2")
+skin_material_names = PackedStringArray("PuMo_Skin", "PuMo_Neck", "PuMo_SoftSkin", "PuMo_EarAndLid")
+
+[node name="EmberGlow" type="OmniLight3D" parent="."]
+position = Vector3(0.28, 0.72, 0.12)
+light_color = Color(1, 0.35, 0.1, 1)
+light_energy = 0.25
+omni_range = 1.1

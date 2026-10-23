@@ -1,0 +1,67 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="Material_robe"]
+albedo_color = Color(0.47, 0.47, 0.34, 1)
+roughness = 0.95
+
+[sub_resource type="StandardMaterial3D" id="Material_skin"]
+albedo_color = Color(0.68, 0.57, 0.46, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="Material_dark"]
+albedo_color = Color(0.16, 0.19, 0.22, 1)
+roughness = 0.95
+
+[sub_resource type="CylinderMesh" id="Mesh_robe"]
+material = SubResource("Material_robe")
+top_radius = 0.18
+bottom_radius = 0.36
+height = 1.05
+
+[sub_resource type="SphereMesh" id="Mesh_head"]
+material = SubResource("Material_skin")
+radius = 0.17
+height = 0.34
+
+[sub_resource type="CylinderMesh" id="Mesh_leg"]
+material = SubResource("Material_dark")
+top_radius = 0.065
+bottom_radius = 0.07
+height = 0.42
+
+[sub_resource type="CylinderMesh" id="Mesh_arm"]
+material = SubResource("Material_robe")
+top_radius = 0.065
+bottom_radius = 0.065
+height = 0.38
+
+[node name="Person" type="Node3D"]
+
+[node name="Robe" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.85, 0)
+mesh = SubResource("Mesh_robe")
+
+[node name="Head" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.56, 0)
+mesh = SubResource("Mesh_head")
+
+[node name="LeftLeg" type="MeshInstance3D" parent="."]
+position = Vector3(-0.13, 0.21, 0)
+mesh = SubResource("Mesh_leg")
+
+[node name="RightLeg" type="MeshInstance3D" parent="."]
+position = Vector3(0.13, 0.21, 0)
+mesh = SubResource("Mesh_leg")
+
+[node name="LeftArm" type="MeshInstance3D" parent="."]
+position = Vector3(-0.27, 1.01, 0)
+rotation_degrees = Vector3(0, 0, 12)
+mesh = SubResource("Mesh_arm")
+
+[node name="RightArm" type="Node3D" parent="."]
+position = Vector3(0.27, 1.2, 0)
+rotation_degrees = Vector3(0, 0, -9)
+
+[node name="Mesh" type="MeshInstance3D" parent="RightArm"]
+position = Vector3(0, -0.19, 0)
+mesh = SubResource("Mesh_arm")

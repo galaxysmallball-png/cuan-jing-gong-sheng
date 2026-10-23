@@ -1,0 +1,20 @@
+{
+  "blender": "5.2.2 LTS",
+  "character": "石阿朵",
+  "bones": 25,
+  "vertices": 73598,
+  "polygons": 69097,
+  "animations": [
+    "carry",
+    "idle",
+    "inspect",
+    "jump",
+    "push",
+    "walk"
+  ],
+  "skins": 1,
+  "packed_reference": true,
+  "uv_layers": 1,
+  "vertex_ao_samples": 48,
+  "glb": "C:\\Users\\26845\\Documents\\ChatGPT\\“爨境，共生”游戏开发，民族交融\\数媒\\cuan-game\\assets\\characters\\shi_aduo\\shi_aduo_rigged.glb"
+}

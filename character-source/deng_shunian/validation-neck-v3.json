@@ -1,0 +1,24 @@
+{
+  "blender": "5.2.2 LTS",
+  "revision": "neck-shadow-v3",
+  "bones": 24,
+  "vertices": 50625,
+  "polygons": 57505,
+  "animations": [
+    "carry",
+    "idle",
+    "inspect",
+    "jump",
+    "push",
+    "walk"
+  ],
+  "skins": 1,
+  "uv_layers": 1,
+  "vertex_ao_samples": 64,
+  "vertex_ao_range_m": 0.1,
+  "skin_shadow_factor_min": 0.6072000000000001,
+  "skin_shadow_factor_max": 1,
+  "glb": "C:\\Users\\26845\\Documents\\ChatGPT\\“爨境，共生”游戏开发，民族交融\\数媒\\cuan-game\\assets\\characters\\deng_shunian\\deng_shunian_neck_v3.glb",
+  "neck_target_mid_width_m": 0.061919999999999996,
+  "visible_neck_height_estimate_m": 0.085
+}

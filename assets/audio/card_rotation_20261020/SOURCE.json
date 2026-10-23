@@ -1,0 +1,20 @@
+{
+  "origin": "Original procedural paper air and wood catches; no external recordings.",
+  "rate": 44100,
+  "effects": [
+    {
+      "file": "rotation.wav",
+      "seconds": 1.0,
+      "sha256": "c48fe762cb66e2e6310063ca946a2e44079fe361541ff7f72f43338ca3958810",
+      "peak_dbfs": -6.375175252488256,
+      "rms_dbfs": -21.83417394379662
+    },
+    {
+      "file": "settle.wav",
+      "seconds": 0.28,
+      "sha256": "59d5d258e9a75c93db7a5ec4974beca529a11046541004fce2992ba189333de9",
+      "peak_dbfs": -6.375175252488256,
+      "rms_dbfs": -29.12613993283143
+    }
+  ]
+}

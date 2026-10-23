@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-18",
+  "images": [
+    {
+      "file": "deng_shunian.png",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\人物和场景\\邓书年角色设定图 (2).png",
+      "sha256": "ce5560ca3239df7876ec22a8ba3b490a9a612ced589fdfe0fd57f1582bd1246d",
+      "altered": false,
+      "runtime_atlas_rect": [
+        125,
+        18,
+        320,
+        435
+      ]
+    },
+    {
+      "file": "shi_aduo.png",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\人物和场景\\石阿朵：白族女石匠设定集.png",
+      "sha256": "5940fe55c6eb7f1d14a548468a9c4f550a906a9c08f9e17699e3359bc42960df",
+      "altered": false,
+      "runtime_atlas_rect": [
+        111,
+        30,
+        330,
+        446
+      ]
+    },
+    {
+      "file": "lao_qing.png",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\人物和场景\\彝族赶马人角色设定图.png",
+      "sha256": "7e6606ad783fc4f0e89f58475c54e514e68e779c3a6c0e702bec3f813c747815",
+      "altered": false,
+      "runtime_atlas_rect": [
+        125,
+        25,
+        310,
+        420
+      ]
+    },
+    {
+      "file": "yang_sanniang.png",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\人物和场景\\杨三娘：回族女货郎角色设定稿.png",
+      "sha256": "f3ebac2635e13613f8d9f78d1bc0c0d28cb24338df763fbd780397b7f99a8e5c",
+      "altered": false,
+      "runtime_atlas_rect": [
+        115,
+        135,
+        300,
+        405
+      ]
+    },
+    {
+      "file": "dialogue_paper.png",
+      "source": "C:\\Users\\26845\\AppData\\Local\\Temp\\codex-clipboard-6033993f-a219-420b-af14-dddf1542a7b7.png",
+      "sha256": "ddb8427a1fae05968a273d93a307f02c35f9ae21ea91335383b4544549715603",
+      "altered": false,
+      "usage": "dialogue panel paper background"
+    }
+  ],
+  "method": "Original bytes retained. Runtime Godot AtlasTexture crops show busts from the four supplied front views. NPCs reuse the original character cards."
+}

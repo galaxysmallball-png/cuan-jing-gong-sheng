@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-18",
+  "images": [
+    {
+      "file": "stele_shape_reference.jpg",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\爨碑\\images (2).jpg",
+      "sha256": "d9c3d9c41548e3aad85b2ea9ca517f99580543215e152e9fdcd4f2d7770e2e19",
+      "altered": false,
+      "usage": "visual reference for rounded shoulders and pierced crown; artistic mesh study"
+    },
+    {
+      "file": "rubbing_reference.jpg",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\爨碑\\images.jpg",
+      "sha256": "e205597bd981e71fcd90d696c26cb84a2a99193afec4c4279f011932a6ea998c",
+      "altered": false,
+      "usage": "reference for dense columns, wear, engraved text and stone tonality"
+    },
+    {
+      "file": "small_stele_rubbing.jpg",
+      "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\爨碑\\images (1).jpg",
+      "sha256": "2201771c045f5f5d9367d23921945666c6bc6b72dedbca23a9db3dcb1efb6ff3",
+      "altered": false,
+      "usage": "supplied small-stele image rendered on small stele and matching viewer"
+    }
+  ],
+  "distinction": "Small stele uses supplied rubbing; large-stele excerpt remains modern small-Cuan font artwork, explicitly labeled. Mesh proportions and aging are artistic studies, not measured reconstruction."
+}

@@ -1,0 +1,374 @@
+{
+  "method": "Original procedural composition, no external audio samples; folk-inspired timbres, not a traditional recording",
+  "generator": "tools/compose_clear_folk_audio.py",
+  "seed": 20261020,
+  "effects": [
+    {
+      "file": "paper.wav",
+      "duration_seconds": 0.28,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "117e820b299601117d4a4adb33f8b99f88f0ffe6b854d6fab4e356e8b428a44b",
+      "rms_dbfs": -17.886783599853516,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "paper",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        880
+      ]
+    },
+    {
+      "file": "stone.wav",
+      "duration_seconds": 0.46,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "1f6d2751ae2d087e7bccec2be80d1bc719cb7712c218f383f8aa33fce9224afe",
+      "rms_dbfs": -13.755926132202148,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "stone",
+      "colour": "bell",
+      "fundamentals_hz": [
+        523.25,
+        1046.5
+      ]
+    },
+    {
+      "file": "wood.wav",
+      "duration_seconds": 0.25,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "d98318ed9878b9385813fe9675caf1c6b0a45e53af00c3d1bf56cdbae4b99063",
+      "rms_dbfs": -17.46422004699707,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "wood",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        783.99
+      ]
+    },
+    {
+      "file": "rope.wav",
+      "duration_seconds": 0.38,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "6a2575834cf026176b442239220bf5a70b2d555ec1548f8d314a1db965ef88f5",
+      "rms_dbfs": -14.620290756225586,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "rope",
+      "colour": "pluck",
+      "fundamentals_hz": [
+        659.25,
+        880
+      ]
+    },
+    {
+      "file": "bell.wav",
+      "duration_seconds": 0.95,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "435bba6be5c951c25e2e201e90eb01cb6bf82089d645d6bf7ccb3fae2bfb9309",
+      "rms_dbfs": -17.46036720275879,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "bell",
+      "colour": "bell",
+      "fundamentals_hz": [
+        1046.5,
+        1567.98
+      ]
+    },
+    {
+      "file": "fire.wav",
+      "duration_seconds": 0.34,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "00cb1698747c521625da28be3134aee74d3828498de66297fbb1081f519307ef",
+      "rms_dbfs": -16.54718780517578,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "fire",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        783.99,
+        987.77
+      ]
+    },
+    {
+      "file": "water.wav",
+      "duration_seconds": 0.38,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "62a9d36f2d3af112eb449001e8fcb417004f169a7cb91f86c28a1cbf7c1c28af",
+      "rms_dbfs": -13.46418571472168,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "water",
+      "colour": "bell",
+      "fundamentals_hz": [
+        1174.66,
+        880
+      ]
+    },
+    {
+      "file": "cloth.wav",
+      "duration_seconds": 0.24,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "af7f0184acdf660dcd031bc390379081b3220e1de868bab1b7efa8011ba70de6",
+      "rms_dbfs": -16.887670516967773,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "cloth",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        987.77
+      ]
+    },
+    {
+      "file": "page.wav",
+      "duration_seconds": 0.28,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "199263fd494b42599f91ae15408c1d3080fb9e7518e71171a0564d485a2c469c",
+      "rms_dbfs": -15.705581665039062,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "page",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        880,
+        1174.66
+      ]
+    },
+    {
+      "file": "success.wav",
+      "duration_seconds": 0.8,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "c2162e354285fd76a00c90c9eb5597c33d695357d4d79669685ae0f7bddd61e2",
+      "rms_dbfs": -16.65106201171875,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "success",
+      "colour": "bell",
+      "fundamentals_hz": [
+        659.25,
+        783.99,
+        987.77,
+        1318.51
+      ]
+    },
+    {
+      "file": "talk.wav",
+      "duration_seconds": 0.16,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "3fcc6b64c43e0836dc653a7f5bad221a3da458cffd1f3eb0324183686131173f",
+      "rms_dbfs": -11.613574981689453,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "talk",
+      "colour": "pluck",
+      "fundamentals_hz": [
+        783.99
+      ]
+    },
+    {
+      "file": "wrong.wav",
+      "duration_seconds": 0.32,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "b1774c004d03a397a600007c6b257bd2709d6751ecd4792eccc1890863bc99e9",
+      "rms_dbfs": -16.347923278808594,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "wrong",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        880,
+        659.25
+      ]
+    },
+    {
+      "file": "button.wav",
+      "duration_seconds": 0.12,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "4ad48f23145421513ba44d8ded4312864f82617fab1f706a02325fa64637aaec",
+      "rms_dbfs": -13.924375534057617,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "button",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        987.77
+      ]
+    },
+    {
+      "file": "card_flip.wav",
+      "duration_seconds": 0.17,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "c49a4090417047ed1f32610c06a52d2a64dbd7d87725ddfedd36a5f371740e03",
+      "rms_dbfs": -11.867445945739746,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "card_flip",
+      "colour": "pluck",
+      "fundamentals_hz": [
+        1174.66
+      ]
+    },
+    {
+      "file": "card_pick.wav",
+      "duration_seconds": 0.35,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "ea06d4270cbfbaf000fa4eaddf247610a644fc932d7da251c30cf16aaeeaafa2",
+      "rms_dbfs": -12.803749084472656,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "card_pick",
+      "colour": "pluck",
+      "fundamentals_hz": [
+        783.99,
+        987.77,
+        1174.66
+      ]
+    },
+    {
+      "file": "jump.wav",
+      "duration_seconds": 0.26,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "23722824c3309699f10c2bff0c513e0b9268f829bc771a4f29abf4a5c7531d4f",
+      "rms_dbfs": -13.821151733398438,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "jump",
+      "colour": "pluck",
+      "fundamentals_hz": [
+        659.25,
+        987.77
+      ]
+    },
+    {
+      "file": "folk_reed.wav",
+      "duration_seconds": 0.62,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "10cc87b8feae3ea7757d6c35eae7486aff72d435148b63dec3d5d45a1d71298d",
+      "rms_dbfs": -6.658079147338867,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "folk_reed",
+      "colour": "flute",
+      "fundamentals_hz": [
+        659.25
+      ]
+    },
+    {
+      "file": "hold_paper.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "ac937454168ad45860981b42bba0dc874d0e234c9de2c22af06883328bf70e0e",
+      "rms_dbfs": -19.314693450927734,
+      "peak_dbfs": -3.2095649242401123,
+      "kind": "hold_paper",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        880
+      ]
+    },
+    {
+      "file": "hold_wood.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "e4de034f2207d78d93d83c911528ca8bf7cd5b4569b68c2da35b0b6180ff0956",
+      "rms_dbfs": -19.362356185913086,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_wood",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        783.99
+      ]
+    },
+    {
+      "file": "hold_stone.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "9791cc53a113d61e0c9f71285b0bcd3ac8d8a265f67d7ec12650033a353391ca",
+      "rms_dbfs": -13.535529136657715,
+      "peak_dbfs": -3.2095649242401123,
+      "kind": "hold_stone",
+      "colour": "bell",
+      "fundamentals_hz": [
+        523.25,
+        1046.5
+      ]
+    },
+    {
+      "file": "hold_rope.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "9b1e6877cea673d4889647b52e626dc3d07c4d272b3d4011f21f58fc2cdc2137",
+      "rms_dbfs": -15.403389930725098,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_rope",
+      "colour": "pluck",
+      "fundamentals_hz": [
+        659.25,
+        880
+      ]
+    },
+    {
+      "file": "hold_fire.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "72bdbeae2862c10273c7d4c5cf2c46db9e773f41ec88055e05e19f08cb5629c1",
+      "rms_dbfs": -19.361520767211914,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_fire",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        783.99,
+        987.77
+      ]
+    },
+    {
+      "file": "hold_cloth.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "e2c458d656298bd544cdd162e34a4d460aa3f5d7ccd317c6ac61f45490b4cb8b",
+      "rms_dbfs": -18.975740432739258,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_cloth",
+      "colour": "bamboo",
+      "fundamentals_hz": [
+        987.77
+      ]
+    },
+    {
+      "file": "hold_bell.wav",
+      "duration_seconds": 1.2,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "6b50779bd367fb167b8558521cd6ea61832eb8c312497e01f9cac61459cb9767",
+      "rms_dbfs": -14.02239990234375,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_bell",
+      "colour": "bell",
+      "fundamentals_hz": [
+        1046.5,
+        1567.98
+      ]
+    }
+  ],
+  "scroll_track": {
+    "file": "scroll_festival.wav",
+    "duration_seconds": 45.71428125,
+    "sample_rate": 32000,
+    "channels": 2,
+    "sha256": "8adbb3039f3fbf7ff71672435c67aabeb1f8cb9fe1770141894fa31b788be3d2",
+    "rms_dbfs": -15.297707557678223,
+    "peak_dbfs": -3.2095656394958496,
+    "title": "长卷同欢·升调",
+    "bpm": 126,
+    "arrangement": "original pentatonic call-and-response, plucked strings, reed synthesis and wooden dance pulse",
+    "transpose_semitones": 2,
+    "previous_bpm": 116
+  }
+}

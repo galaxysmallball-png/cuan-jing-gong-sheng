@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/villager_character_controller.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/characters/yu_nan/yu_nan_rigged.glb" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/characters/pack_donkey_character.tscn" id="3"]
+
+[node name="YuNan" type="Node3D"]
+script = ExtResource("1")
+model_scene = ExtResource("2")
+skin_material_names = PackedStringArray("YuNan_Skin", "YuNan_Neck", "YuNan_SoftSkin", "YuNan_EarAndLid")
+companion_path = NodePath("PackDonkey")
+
+[node name="PackDonkey" parent="." instance=ExtResource("3")]
+position = Vector3(-0.64, 0, -0.28)
+scale = Vector3(0.82, 0.82, 0.82)

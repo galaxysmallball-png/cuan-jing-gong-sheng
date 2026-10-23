@@ -1,0 +1,19 @@
+{
+  "origin": "Original procedural paper air and wooden catches, no recorded samples; full PCM import and frame-accurate loop.",
+  "effects": [
+    {
+      "file": "rotation.wav",
+      "seconds": 1.0,
+      "sha256": "f1690f0f5ca71502223aa63cac61d55fb5e34ead9ed90a4d1c8df0fb1356579b",
+      "rms_dbfs": -11.589418989540176,
+      "peak_dbfs": -3.8764005203222562
+    },
+    {
+      "file": "settle.wav",
+      "seconds": 0.28,
+      "sha256": "0058451e7513401d439cd12bce415327b56ec137edf67f4c99dadb9ca97adcc6",
+      "rms_dbfs": -20.921120046718155,
+      "peak_dbfs": -3.8764005203222562
+    }
+  ]
+}

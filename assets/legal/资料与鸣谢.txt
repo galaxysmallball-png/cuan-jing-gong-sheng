@@ -1,0 +1,54 @@
+﻿爨境·共生 — 资料与鸣谢
+
+本包供同学进行非商业学习试玩。人物与护碑情节为原创叙事，
+人物生活描写不代表某个民族所有人的习惯，长卷为艺术创作。
+角色、卡片、封面及场景背景使用项目提供的美术素材。
+
+配乐：碑院相逢、踏歌过溪、暖灯对歌、万家同欢。
+按钮、物件、任务、溪流与小艺短音色同为本项目程序合成。
+由本项目程序编排与合成，未使用第三方录音或乐器采样。
+
+字库：梁培生小爨-简，作者梁培生，来源曲靖珠江网。
+https://www.zjw.cn/html/ziti/index.html
+字库用于当前教育、学习的非商业原型；不是开放源码或无限制
+免费商用字体。发布页限制销售产品、商业应用及字体下载镜像；
+商业使用须另与权利方协商。完整范围以原发布声明为准。
+题卡与大爨节选为现代字库示意；小爨使用项目提供的参考拓影。
+游戏造型、故事与互动为艺术表现。
+
+文化资料来源：
+曲靖市人民政府·爨文化博物馆
+https://www.qj.gov.cn/html/2020/csmp_0417/83745.html
+云南宣传网·二爨碑上的千秋笔意
+https://www.ynxc.gov.cn/html/2026/whxdfocus_0831/3037025.html
+国家民委·云南持续拓展各民族交往交流交融的广度和深度
+https://www.neac.gov.cn/seac/xwzx/202407/1174878.shtml
+国家文化记忆库·晋建宁太守爨宝子碑拓本
+https://tcmb.culture.tw/zh-tw/detail?id=14000102749&indexCode=MOCCOLLECTIONS
+
+民乐配器与器物陈设的参考资料：
+云南非物质文化遗产保护网·彝族烟盒舞
+https://www.ynich.cn/item/37.html
+中国非物质文化遗产网·苗族的芦笙舞
+https://www.ihchina.cn/news_1_details/11374.html
+云南非物质文化遗产保护网·白族扎染技艺
+https://www.ynich.cn/item/148.html
+中国非物质文化遗产网·傣族织锦
+https://www.ihchina.cn/project_details/11358/
+本项目合成音色与小艺不作为传统曲牌或完整工艺教学的复原。
+
+引擎：Godot Engine。引擎及所含第三方组件的版权与许可全文
+见同目录“Godot引擎与第三方许可.txt”。
+
+新增实物照片：张希黄《醉翁亭记》诗意图笔筒（The Met 1994.208）。
+The Metropolitan Museum of Art，Public Domain / Open Access。
+https://www.metmuseum.org/art/collection/search/39625
+照片用于实物参照；游戏的竹筒、书卷与拓包另制，不作该馆藏文物复原。
+竹筒结构另参考国立故宫博物院“竹雕文字笔筒”：
+https://digitalarchive.npm.gov.tw/Collection/Detail/62313?dep=U
+未使用故宫该页照片。纸底由项目美术提供，源图字节未改。
+
+
+本轮新增 18 张实物照片，覆盖 21 类特色物件。完整作者、来源页和授权链接见同目录《实物照片_来源与授权.md》；游戏照片下方也有来源与授权入口。
+
+本轮原创音频：tools/compose_clear_folk_audio.py；来源与校验见原创音效与长卷音乐_来源与校验.json。无外部音频采样。工艺参考链接见本轮改动与验证.md。

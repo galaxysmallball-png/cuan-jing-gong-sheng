@@ -1,0 +1,16 @@
+{
+  "source_reopened": true,
+  "bones": 22,
+  "animations": 6,
+  "packed_images": 2,
+  "all_vertices_weighted": true,
+  "accessory_parents_verified": {
+    "ear.L": "head",
+    "ear.R": "head",
+    "cargo.L": "spine",
+    "cargo.R": "spine",
+    "tail": "spine"
+  },
+  "vertices": 79852,
+  "polygons": 78068
+}

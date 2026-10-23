@@ -1,0 +1,291 @@
+{
+  "photos": {
+    "bai": {
+      "file": "res://assets/references/folk/bai.jpg",
+      "title": "白族扎染布 · 云南省博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Bai_fabric,_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02211.JPG",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02211.JPG/1280px-Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02211.JPG",
+      "author": "Daderot",
+      "license": "Public domain",
+      "license_url": "",
+      "description": "Bai fabric, tie-dyed. Clothing in the Yunnan Provincial Museum, Kunming, Yunnan, China.",
+      "sha256": "ef2f453f9b11a88f4cf2b55918f86ade83f40f6ef61f759ce0637273d51de792",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "batik": {
+      "file": "res://assets/references/folk/batik.jpg",
+      "title": "贵州苗族蜡染实物",
+      "source": "https://commons.wikimedia.org/wiki/File:Miao_batik_%E8%8B%97%E6%97%8F%E8%9C%A1%E6%9F%93,_Guizhou,_2016_(52410712522).jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Miao_batik_%E8%8B%97%E6%97%8F%E8%9C%A1%E6%9F%93%2C_Guizhou%2C_2016_%2852410712522%29.jpg/1280px-Miao_batik_%E8%8B%97%E6%97%8F%E8%9C%A1%E6%9F%93%2C_Guizhou%2C_2016_%2852410712522%29.jpg",
+      "author": "JL Cogburn",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Miao batik 苗族蜡染, Guizhou, 2016",
+      "sha256": "7b96490458cbb2788f9a59a2fcfcb80965d19c3c7990303535eb02261d72605a",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "basket": {
+      "file": "res://assets/references/folk/basket.jpg",
+      "title": "嵊州竹编提篮 · 浙江省博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Shengzhou_Bamboo_Weaving_Basket_in_Zhejiang_Provincial_Museum_2014-04.JPG",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Shengzhou_Bamboo_Weaving_Basket_in_Zhejiang_Provincial_Museum_2014-04.JPG/1280px-Shengzhou_Bamboo_Weaving_Basket_in_Zhejiang_Provincial_Museum_2014-04.JPG",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "​嵊州竹编绍兴八角三格提篮，20世纪50年代。",
+      "sha256": "a5aec99d86e4400855b4d865292566862fa4f5b3e7601bbd9b8b31183b10a24d",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "brocade": {
+      "file": "res://assets/references/folk/brocade.jpg",
+      "title": "傣锦 · 云南省博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Dai_brocade_-_Yunnan_Provincial_Museum_-_DSC02009.JPG",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Dai_brocade_-_Yunnan_Provincial_Museum_-_DSC02009.JPG/1280px-Dai_brocade_-_Yunnan_Provincial_Museum_-_DSC02009.JPG",
+      "author": "Daderot",
+      "license": "Public domain",
+      "license_url": "",
+      "description": "Dai brocade. Clothing in the Yunnan Provincial Museum, Kunming, Yunnan, China.",
+      "sha256": "70dd838beca3aab8373f7aa79820fc6929b41f501c0f4c08066ee37bc69176a1",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "pack": {
+      "file": "res://assets/references/folk/pack.jpg",
+      "title": "木质驮鞍 · 美国器型对照",
+      "source": "https://commons.wikimedia.org/wiki/File:PackSaddleUSA.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/PackSaddleUSA.jpg/1280px-PackSaddleUSA.jpg",
+      "author": "Montanabw",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "A \"Sawbuck\" style pack saddle, an old style still common in the western United States.  Front and back cinches as well as breastcollar and breeching visible",
+      "sha256": "dc230965efc7a60f27817d28fae4a56c08ec850affe0ec6d240eb9a623ca8598",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "carrier": {
+      "file": "res://assets/references/folk/carrier.jpg",
+      "title": "赫蒙族蜡染背婴布 · 越南民族学博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Batik_baby_carrier,_Hmong_-_Vietnam_Museum_of_Ethnology_-_Hanoi,_Vietnam_-_DSC03042.JPG",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Batik_baby_carrier%2C_Hmong_-_Vietnam_Museum_of_Ethnology_-_Hanoi%2C_Vietnam_-_DSC03042.JPG/1280px-Batik_baby_carrier%2C_Hmong_-_Vietnam_Museum_of_Ethnology_-_Hanoi%2C_Vietnam_-_DSC03042.JPG",
+      "author": "Daderot",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Exhibit in the Vietnam Museum of Ethnology - Hanoi, Vietnam. Photography was permitted in the museum without restriction.",
+      "sha256": "80f04d67272c7b65deb5a85b74c96156879357a2ac30350431fffd132afa3db4",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "hoe": {
+      "file": "res://assets/references/folk/hoe.jpg",
+      "title": "战国铁锄与铁插 · 荆州博物馆（农具对照）",
+      "source": "https://commons.wikimedia.org/wiki/File:Hoes,_Warring_States_period,_Jingzhou_Museum1.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Hoes%2C_Warring_States_period%2C_Jingzhou_Museum1.jpg/1280px-Hoes%2C_Warring_States_period%2C_Jingzhou_Museum1.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Hoes, Warring States period (475-221 BC). Unearthed in Jingzhou, Hubei. They are preserved in the Jingzhou Museum.",
+      "sha256": "2638352a0899c1d77917ea14e561bd2ebede69e33363edb53fd5cfa741e6d713",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "joinery": {
+      "file": "res://assets/references/folk/joinery.jpg",
+      "title": "木作榫接实物 · 连接方式对照",
+      "source": "https://commons.wikimedia.org/wiki/File:Examples_of_Wood_Joints.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Examples_of_Wood_Joints.jpg/1280px-Examples_of_Wood_Joints.jpg",
+      "author": "Tim Sheerman-Chase",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Bridle\nGun Stock\nDovetail Halving\nHalving Joint\nMortise and tenon\nDove tails\n\nDockyard Apprentice Exhibition",
+      "sha256": "53a5ca7ee3cdbf89309ec14a98437e824c56e862e3c5602161939959a950fe4a",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "knife": {
+      "file": "res://assets/references/folk/knife.jpg",
+      "title": "孟加拉国钩形柴刀 · 器型对照",
+      "source": "https://commons.wikimedia.org/wiki/File:Billhooks_-_%E0%A6%A6%E0%A6%BE_-_DSC00576.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Billhooks_-_%E0%A6%A6%E0%A6%BE_-_DSC00576.jpg/1280px-Billhooks_-_%E0%A6%A6%E0%A6%BE_-_DSC00576.jpg",
+      "author": "Moheen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Billhook from Bangladesh.",
+      "sha256": "58893be5c49d9b00a687e274e1ec5ccadcfa9c1403042c11261f5d9207ecf6f3",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "tea": {
+      "file": "res://assets/references/folk/tea.jpg",
+      "title": "龙山文化黑陶器 · 山东博物馆（陶色与器型对照）",
+      "source": "https://commons.wikimedia.org/wiki/File:Longshan_Culture_Black_Pottery_(10126003864).jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Longshan_Culture_Black_Pottery_%2810126003864%29.jpg/1280px-Longshan_Culture_Black_Pottery_%2810126003864%29.jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Shandong Provincial Museum, Jinan, Neolithic Gallery. Complete indexed photo collection at WorldHistoryPics.com.",
+      "sha256": "1a47f5a8823f6c5be92b9444471b2751d8777a66174828d118b6ef16640c82c5",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "pouch": {
+      "file": "res://assets/references/folk/pouch.jpg",
+      "title": "藏地火镰袋 · 取火器对照",
+      "source": "https://commons.wikimedia.org/wiki/File:Object_from_Tibet_3.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Object_from_Tibet_3.jpg/1280px-Object_from_Tibet_3.jpg",
+      "author": "Vassil",
+      "license": "Public domain",
+      "license_url": "",
+      "description": "Briquet à silex.",
+      "sha256": "9adc65444f8d74235fd6cac3197937919f85e026319fa535032db5bf1fa47ce6",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "brazier": {
+      "file": "res://assets/references/folk/brazier.jpg",
+      "title": "清代金属火盆 · 斯珀洛克博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Brazier,_China,_Qing_dynasty,_1880-199_AD,_metal_-_Spurlock_Museum,_UIUC_-_DSC06063.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Brazier%2C_China%2C_Qing_dynasty%2C_1880-199_AD%2C_metal_-_Spurlock_Museum%2C_UIUC_-_DSC06063.jpg/1280px-Brazier%2C_China%2C_Qing_dynasty%2C_1880-199_AD%2C_metal_-_Spurlock_Museum%2C_UIUC_-_DSC06063.jpg",
+      "author": "Daderot",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Exhibit in the Spurlock Museum, University of Illinois at Urbana-Champaign - Urbana-Champaign, Illinois, USA. This work is old enough so that it is in the public domain.",
+      "sha256": "c5d8d7dbb5f6b63e2e80ec0ec5b46b5daeabfe2aab0dbe7d6d79d4a4524626c0",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "chisel": {
+      "file": "res://assets/references/folk/chisel.jpg",
+      "title": "石匠錾凿作业实拍 · 工具使用对照",
+      "source": "https://commons.wikimedia.org/wiki/File:Stonemason_reaching_for_tools.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Stonemason_reaching_for_tools.jpg/1280px-Stonemason_reaching_for_tools.jpg",
+      "author": "Fraser.macdonald0411",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "A stonemason at Stratum Masonry Glasgow reaching for his tools",
+      "sha256": "023baa464badb79a092e35dd90988724799a2c5fdc19738949373e204026c6f9",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "bell": {
+      "file": "res://assets/references/folk/bell.jpg",
+      "title": "辽代铜马铃 · 中国国家博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Liao_Bronze_Horse_Bell_(9834270546).jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Liao_Bronze_Horse_Bell_%289834270546%29.jpg/1280px-Liao_Bronze_Horse_Bell_%289834270546%29.jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Tomb of emperor's son-in-law. National Museum: China through the Ages, Exhibit 7. Complete indexed photo collection at WorldHistoryPics.com.",
+      "sha256": "3c5847c6e927f9f520aeaeaa85ed5d718c35eae9a96e67f4d84fcede61103f60",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "cord": {
+      "file": "res://assets/references/folk/cord.jpg",
+      "title": "红绳中国结 · 编结实物对照",
+      "source": "https://commons.wikimedia.org/wiki/File:Chinese_knot.JPG",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Chinese_knot.JPG/1280px-Chinese_knot.JPG",
+      "author": "Webridge",
+      "license": "Public domain",
+      "license_url": "",
+      "description": "A Chinese knot made by myself",
+      "sha256": "5e209ea1de4de8283957e087d4b70c54417b8fd42e13cfdbb6dd34b8e7a8e1a6",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "donkey": {
+      "file": "res://assets/references/folk/donkey.jpg",
+      "title": "负载毛驴实拍 · 驮具与布囊对照",
+      "source": "https://commons.wikimedia.org/wiki/File:Donkey_06.jpg",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Donkey_06.jpg/1280px-Donkey_06.jpg",
+      "author": "Shams948",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "الاغ با پالان و توبره و خورجین در حال چرا",
+      "sha256": "6a59eaad6d1bf5c3679a4630fb611e7baea73d6778d776c7744b88ccd7f3e14c",
+      "use": "驮运动物与驮具对照，不称剧中毛驴原物。"
+    },
+    "loom": {
+      "file": "res://assets/references/folk/loom.jpg",
+      "title": "纳西族织机 · 云南民族博物馆",
+      "source": "https://commons.wikimedia.org/wiki/File:Loom_-_Yunnan_Nationalities_Museum_-_DSC04094.JPG",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Loom_-_Yunnan_Nationalities_Museum_-_DSC04094.JPG/1280px-Loom_-_Yunnan_Nationalities_Museum_-_DSC04094.JPG",
+      "author": "Daderot",
+      "license": "Public domain",
+      "license_url": "",
+      "description": "Naxi loom. Exhibit in the weaving collection in the Yunnan Nationalities Museum, Kunming, Yunnan, China.",
+      "sha256": "ebb62532ecf71dd35010b069c08d1157f876508f614070de548817a365ed5e13",
+      "use": "实物照片作工艺/器型对照；不称剧中角色原物，不据照片推断未标明民族。"
+    },
+    "brush": {
+      "file": "res://assets/references/bamboo_brush_holder_met.jpg",
+      "title": "张希黄竹刻笔筒 · 大都会艺术博物馆",
+      "source": "https://www.metmuseum.org/art/collection/search/39625",
+      "author": "The Metropolitan Museum of Art",
+      "license": "Public Domain",
+      "license_url": "https://www.metmuseum.org/policies/image-resources",
+      "region": [
+        720,
+        850,
+        1560,
+        2260
+      ],
+      "sha256": "5919ad81a11e1ceef500519c979b71b15b978f9a1f4a15bd33f9ad2edc4721e6"
+    }
+  },
+  "items": {
+    "bai_tiedye": [
+      "bai"
+    ],
+    "yang_trade_goods": [
+      "basket"
+    ],
+    "scholar_tools": [
+      "brush"
+    ],
+    "caravan_pack": [
+      "pack",
+      "bell"
+    ],
+    "miao_batik": [
+      "batik",
+      "carrier"
+    ],
+    "dai_brocade": [
+      "brocade"
+    ],
+    "shared_tea": [
+      "tea",
+      "brazier"
+    ],
+    "cloth_loom": [
+      "loom"
+    ],
+    "a_cai_hoe": [
+      "hoe"
+    ],
+    "a_cai_basket": [
+      "basket"
+    ],
+    "baby_carrier": [
+      "carrier"
+    ],
+    "a_qiang_beam": [
+      "joinery"
+    ],
+    "a_qiang_knife": [
+      "knife"
+    ],
+    "tea_jar": [
+      "tea"
+    ],
+    "fire_basin": [
+      "brazier"
+    ],
+    "flint_pouch": [
+      "pouch"
+    ],
+    "yu_nan_brocade": [
+      "brocade"
+    ],
+    "donkey": [
+      "donkey"
+    ],
+    "garden_item_1": [
+      "chisel"
+    ],
+    "garden_item_2": [
+      "bell"
+    ],
+    "garden_item_3": [
+      "cord"
+    ]
+  }
+}

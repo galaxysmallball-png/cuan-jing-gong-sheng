@@ -1,0 +1,125 @@
+{
+  "method": "Original procedural material Foley, no external samples",
+  "effects": [
+    {
+      "file": "paper.wav",
+      "duration_seconds": 0.32,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "3957a26c6f2ef9287c8be0ea6faeb66739952816714e01c8769bf1db716cb80f",
+      "rms_dbfs": -16.408178329467773,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "paper"
+    },
+    {
+      "file": "stone.wav",
+      "duration_seconds": 0.4,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "5a1083a31623e0d5e1f1d6844ce814161faec6bb5be56825900f51bf45d8f8f2",
+      "rms_dbfs": -18.3138484954834,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "stone"
+    },
+    {
+      "file": "wood.wav",
+      "duration_seconds": 0.3,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "9c1a4a3e35e12616976a53d12017845ddd5cd8e3a344ae6d443d3e306af5900a",
+      "rms_dbfs": -18.659669876098633,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "wood"
+    },
+    {
+      "file": "rope.wav",
+      "duration_seconds": 0.4,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "3f392f3c17a24bdf49ad6b898def4f14712bb3ed1f84e0cccaf179b866b532ad",
+      "rms_dbfs": -18.670473098754883,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "rope"
+    },
+    {
+      "file": "bell.wav",
+      "duration_seconds": 1.1,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "4c73d9a42f7ea5a42b8d47fc762c575099d8ecf2b9b926b91e060bb5b8342308",
+      "rms_dbfs": -16.891162872314453,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "bell"
+    },
+    {
+      "file": "fire.wav",
+      "duration_seconds": 0.5,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "4358ee99ef0a87897fe566f313c62f6eeb247ea5722566c031c0ed8dda1ff30c",
+      "rms_dbfs": -18.34457778930664,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "fire"
+    },
+    {
+      "file": "water.wav",
+      "duration_seconds": 0.42,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "4f91513973bc2cab95251ac0629a90de9ff36702d5aa6af5fe201334a0434a2f",
+      "rms_dbfs": -15.266426086425781,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "water"
+    },
+    {
+      "file": "cloth.wav",
+      "duration_seconds": 0.28,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "f887ae7198925c86da22d87b375e0024181a0bd327758bd8bf03a737d31fcd47",
+      "rms_dbfs": -16.800676345825195,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "cloth"
+    },
+    {
+      "file": "page.wav",
+      "duration_seconds": 0.38,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "11b2408e8a691d77f91409af50020b7ba47eedd79b52d1f4f7807d91c299b240",
+      "rms_dbfs": -15.987922668457031,
+      "peak_dbfs": -3.2095649242401123,
+      "kind": "page"
+    },
+    {
+      "file": "success.wav",
+      "duration_seconds": 0.7,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "00518062f1ac0554d5f6438d7c768ff4fdc8aaa4640e245a29094a0cd11b2482",
+      "rms_dbfs": -15.506420135498047,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "success"
+    },
+    {
+      "file": "talk.wav",
+      "duration_seconds": 0.15,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "b89d9e5f680e104291c69207d1462261b776314d8c3eb8b1fa53b5f7ff02e754",
+      "rms_dbfs": -15.082357406616211,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "talk"
+    },
+    {
+      "file": "wrong.wav",
+      "duration_seconds": 0.25,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "292293262bb53cf9abfa71ab7d9235b74f36a25e0393c36fbf0127e09e700ba6",
+      "rms_dbfs": -14.938858985900879,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "wrong"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "sha256": "b6eab919b1b12e34900b1d58b7ab713e55bfb1d13307f0fa7850c784d0967e51",
+    "file": "card_draw_background.png",
+    "source": "水墨山谷与飘带暖阳.png",
+    "use": "抽牌背景"
+  },
+  {
+    "sha256": "8663942f427f98fbe8f43e4d53b03374d317dcac953df3c1e12b496d0944975f",
+    "file": "title_cover.png",
+    "source": "演示文稿1_01.png",
+    "use": "进入界面"
+  },
+  {
+    "file": "title_button_paper.png",
+    "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\按钮和提示框背景\\0cb7ce86-c38b-4311-91b6-e6ee8b495c1b.png",
+    "sha256": "b1f8158c0f6eecfb4becf9316014ec1d086205e0ff0b252aa954877afdf39517",
+    "use": "进入界面按钮背景",
+    "altered": false,
+    "rendering": "Original image scaled by native Godot UI; no bitmap editing"
+  },
+  {
+    "file": "game_button_paper.png",
+    "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\按钮和提示框背景\\32c9be7b-078a-4b3a-9b04-3546cb9362d0.png",
+    "sha256": "f6a85f2f2fb996682426e0e38a0dd78a3ca0d8182bc5a372e4d3374f64848270",
+    "use": "游戏按钮、展开的操作提示及附近物件阅读框背景",
+    "altered": false,
+    "rendering": "Original image scaled by native Godot UI; no bitmap editing"
+  },
+  {
+    "file": "task_flower_paper.png",
+    "source": "C:/Users/26845/Desktop/树莓比赛美工/按钮和提示框背景/aa155e22-ee87-414b-9059-4cb4a69f90ea.png",
+    "sha256": "352d56a350dc0fa9802e7e962f1eeb376a2438be8bc988b2ed316f990d9cafa4",
+    "use": "第三幕双人任务进度纸底与杨旗田背景介绍",
+    "altered": false
+  },
+  {
+    "file": "scroll_cover.png",
+    "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\按钮和提示框背景\\ff8a7c2a-dbf2-4846-8552-74f254197169.png",
+    "sha256": "97da6714d37fc799e706b32f61b2711822b96984cacde8b8bb181e3ed5c1377e",
+    "use": "共生长卷卷首封面；展卷后接原四幅画面",
+    "altered": false
+  },
+  {
+    "file": "parcel_paper.png",
+    "source": "C:\\Users\\26845\\Desktop\\树莓比赛美工\\按钮和提示框背景\\aa155e22-ee87-414b-9059-4cb4a69f90ea.png",
+    "sha256": "352d56a350dc0fa9802e7e962f1eeb376a2438be8bc988b2ed316f990d9cafa4",
+    "use": "包裹线索卡与包裹内按钮背景",
+    "altered": false
+  },
+  {
+    "file": "notice_bird_paper.png",
+    "source": "C:\\Users\\26845\\AppData\\Local\\Temp\\codex-clipboard-b01d4363-6694-4865-b939-ec9767d72c87.png",
+    "sha256": "ce3b42fa4341655404d6f51a5311aebf96b587e4b3c6fd4559cead32bc30469f",
+    "use": "成就与线索通知和相关弹窗按钮",
+    "altered": false
+  }
+]

@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/character_animation_controller.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/characters/shi_aduo/shi_aduo_refined.glb" id="2"]
+
+[node name="ShiAduo" type="Node3D"]
+script = ExtResource("1")
+model_scene = ExtResource("2")
+skin_material_names = PackedStringArray("Aduo_Skin", "Aduo_Neck", "Aduo_SoftSkin", "Aduo_EarAndLid")

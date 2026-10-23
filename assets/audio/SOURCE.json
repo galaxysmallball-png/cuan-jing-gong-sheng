@@ -1,0 +1,65 @@
+{
+  "method": "Original synthesis; regional dance accompaniment inspires orchestration, not a reproduction of traditional repertoire",
+  "composer_source": "tools/compose_festival_audio.py",
+  "seed": 1810405,
+  "inspiration_sources": [
+    {
+      "title": "云南非物质文化遗产保护网·彝族烟盒舞",
+      "url": "https://www.ynich.cn/item/37.html"
+    },
+    {
+      "title": "中国非物质文化遗产网·苗族的芦笙舞",
+      "url": "https://www.ihchina.cn/news_1_details/11374.html"
+    }
+  ],
+  "tracks": [
+    {
+      "file": "courtyard.wav",
+      "duration_seconds": 60.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "53738cebba2a0d02b00fea3aafbfafc10fa818bad85f414412ff225c2cc461f4",
+      "rms_dbfs": -15.146320343017578,
+      "peak_dbfs": -3.2095649242401123,
+      "title": "碑院相逢",
+      "bpm": 96,
+      "arrangement": "original pentatonic call-and-response, plucked strings, reed synthesis and wooden dance pulse"
+    },
+    {
+      "file": "creek.wav",
+      "duration_seconds": 51.4285625,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "ec1453ad3a1ba0fe0f54a0765395e489331aed17e91052fb529046aa8ca71e34",
+      "rms_dbfs": -14.861835479736328,
+      "peak_dbfs": -3.2095656394958496,
+      "title": "踏歌过溪",
+      "bpm": 112,
+      "arrangement": "original pentatonic call-and-response, plucked strings, reed synthesis and wooden dance pulse"
+    },
+    {
+      "file": "garden.wav",
+      "duration_seconds": 53.33334375,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "a7f6915d96162b508da38aa47c80fa0d298ac1b24816a1ed53802d4b800c2e9e",
+      "rms_dbfs": -15.631242752075195,
+      "peak_dbfs": -3.2095656394958496,
+      "title": "暖灯对歌",
+      "bpm": 108,
+      "arrangement": "original pentatonic call-and-response, plucked strings, reed synthesis and wooden dance pulse"
+    },
+    {
+      "file": "finale.wav",
+      "duration_seconds": 49.6551875,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "be5902cf7e0b4bbb5b40e48b06517f8553150d18f96c84b5780f020ad45664d3",
+      "rms_dbfs": -15.71535587310791,
+      "peak_dbfs": -3.2095656394958496,
+      "title": "万家同欢",
+      "bpm": 116,
+      "arrangement": "original pentatonic call-and-response, plucked strings, reed synthesis and wooden dance pulse"
+    }
+  ]
+}

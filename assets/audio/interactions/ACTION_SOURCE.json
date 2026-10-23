@@ -1,0 +1,137 @@
+{
+  "method": "Original procedural Foley, no external recordings or samples",
+  "effects": [
+    {
+      "file": "button.wav",
+      "duration_seconds": 0.11,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "ce07cb13a4eff86d7a9aa6d68ddf220fcf0288d26d55512d4a5a351b1b7fb6c1",
+      "rms_dbfs": -15.991753578186035,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "button",
+      "loop": false
+    },
+    {
+      "file": "card_flip.wav",
+      "duration_seconds": 0.21,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "efb57ca2e8b4b0ac817c6d015900604397875e194bb9b6d7bd304d24e5f715ab",
+      "rms_dbfs": -17.144123077392578,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "card_flip",
+      "loop": false
+    },
+    {
+      "file": "card_pick.wav",
+      "duration_seconds": 0.65,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "3d32ffdf4dcf5d0071426bc2f9041675b636da356cf907161b5156ff05ea9764",
+      "rms_dbfs": -16.86388397216797,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "card_pick",
+      "loop": false
+    },
+    {
+      "file": "jump.wav",
+      "duration_seconds": 0.18,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "be698f5aa2e4bd7960d966fcaeb73336e1e9bae754af72f0ace527679c50e565",
+      "rms_dbfs": -11.871148109436035,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "jump",
+      "loop": false
+    },
+    {
+      "file": "stream.wav",
+      "duration_seconds": 7.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "af46fe796bf14382dcb74ffa1bdc6b2aa3688d7e11517201489548bc0ac8193c",
+      "rms_dbfs": -15.905040740966797,
+      "peak_dbfs": -3.2095649242401123,
+      "kind": "stream",
+      "loop": true
+    },
+    {
+      "file": "hold_wood.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "76cf6bc9e3c77d71998afc45f3584da084dde84768c6be7e10963df818db3ec3",
+      "rms_dbfs": -12.728610038757324,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_wood",
+      "loop": true
+    },
+    {
+      "file": "hold_stone.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "f5adb7c61c4c3e16ab22d588ab7e643c7b08ee1d25e5af167a411c7fcf9037f0",
+      "rms_dbfs": -15.755080223083496,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_stone",
+      "loop": true
+    },
+    {
+      "file": "hold_rope.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "183e28e9981448a022f4e8ddfaf53e07bc9121d0a38074ce4ab5544dbfa0adc8",
+      "rms_dbfs": -13.387699127197266,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_rope",
+      "loop": true
+    },
+    {
+      "file": "hold_paper.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "f77b7bc0c303eb0a0097e8e1093df5322e1573720b6c3b7758fed853af94382b",
+      "rms_dbfs": -17.381582260131836,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_paper",
+      "loop": true
+    },
+    {
+      "file": "hold_fire.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "cdb58922240f5546f3509ecb517726357b31588f142a94411d0d164f708ea047",
+      "rms_dbfs": -15.043574333190918,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_fire",
+      "loop": true
+    },
+    {
+      "file": "hold_cloth.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "0173986852710aaf205b65f4d0ea5baecd81b52c877b744b6f889e7049b941f0",
+      "rms_dbfs": -15.26384449005127,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_cloth",
+      "loop": true
+    },
+    {
+      "file": "hold_bell.wav",
+      "duration_seconds": 0.96,
+      "sample_rate": 32000,
+      "channels": 2,
+      "sha256": "2b1847b4e5c9c156f56b2c49c58731c7a7756e4d9ae1085cd2ed368b45fd7414",
+      "rms_dbfs": -11.384787559509277,
+      "peak_dbfs": -3.2095656394958496,
+      "kind": "hold_bell",
+      "loop": true
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "provided_by": "user",
+  "films": [
+    {
+      "name": "opening_story",
+      "placement": "总开场",
+      "seconds": 36.99,
+      "runtime_sha256": "281af91b1ea97ce65b46487dd9f83aeb7cd6a29edab131c2dfcb0d6c7c8e983a",
+      "source_sha256": "e6507759be75a7669210dc201215710fb04b79e1f566c254b207a6324416885e",
+      "runtime_bytes": 35197142
+    },
+    {
+      "name": "chapter_01",
+      "placement": "第一关前",
+      "seconds": 40.22,
+      "runtime_sha256": "c60a97323e8884e94d3c675da8d2c13a44f1e13abe2544646bd3196ab7233b52",
+      "source_sha256": "33eaf1a05da6ab9c833d840ccb94f2bce3e0aa66a90ea57c4bd75f09f049216e",
+      "runtime_bytes": 52576062
+    },
+    {
+      "name": "chapter_02",
+      "placement": "第二关前",
+      "seconds": 25.47,
+      "runtime_sha256": "3910adf4832dc8347e223466ee6b0d98e87591f21b51a68c9b31394bb72ef213",
+      "source_sha256": "78a15de1ecaead00eef06ef2f76cf31cc7d4ac1ab601892b548aa8a2b9b88335",
+      "runtime_bytes": 47625987
+    },
+    {
+      "name": "chapter_03",
+      "placement": "立碑动画完成、碑脚落座之后",
+      "seconds": 33.95,
+      "runtime_sha256": "0aaa39d4621ae510d5e7b86b63d7e04b676a3a15c866f9d00bce4c4e7bfb41db",
+      "source_sha256": "4c73193cb4d13ddb5e49ae80a2500705c72fa6899633fcaffbd501f00d7540a1",
+      "runtime_bytes": 38966627
+    },
+    {
+      "name": "epilogue",
+      "placement": "读完共生长卷后",
+      "seconds": 63.95,
+      "runtime_sha256": "9036f239149b645f777aea7b8ca6f2c3dcdb45de5aed8bcd26349de992659353",
+      "source_sha256": "613b604019114efe0ce18b21aa51a6b213fe2b238784cd3b4287a196afa3f7db",
+      "runtime_bytes": 115208146
+    }
+  ],
+  "conversion": "720p,30fps,Theora8,Vorbis5,aspect preserved; no original content edits"
+}
