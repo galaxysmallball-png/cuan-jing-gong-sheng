@@ -1,6 +1,6 @@
 # 完整工程构建
 
-先解压参赛完整源码 ZIP；从 GitHub 下载的代码审阅包需先从完整工程补齐 assets/ 和 character-source/。用 Godot 4.7.2 导入 project.godot，等待导入完成后按 F5 运行。
+先解压完整源码 ZIP；从 GitHub 下载的代码审阅包需先从完整工程补齐 assets/ 和 character-source/。用 Godot 4.7.2 导入 project.godot，等待导入完成后按 F5 运行。
 
 安装匹配的导出模板，Windows 导出入口为 tools/build_portable.ps1，传入 -GodotExe 本机Godot路径 -Platform Windows；导出 EXE 与 PCK 需配套分发。
 

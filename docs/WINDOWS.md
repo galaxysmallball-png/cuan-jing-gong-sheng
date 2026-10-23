@@ -1,6 +1,6 @@
 # Windows 启动与操作
 
-使用参赛运行附件 `CuanJingGongSheng-Windows-v0.2.1.zip`，完整解压后双击 `CuanParty.exe`，保留同目录 `CuanParty.pck`。这是可直接运行的 Windows 软件，不要求评委安装开发引擎。源码下载与附件对应关系见 [运行附件说明](DOWNLOADS.md)。
+使用运行包 `CuanJingGongSheng-Windows-v0.2.1.zip`，完整解压后双击 `CuanParty.exe`，保留同目录 `CuanParty.pck`。无需安装 Godot 引擎。源码下载与附件对应关系见 [运行附件说明](DOWNLOADS.md)。
 
 - 1P：WASD 移动，空格跳跃，E 操作，F 交谈，Tab 换人。
 - 2P：方向键移动，小键盘 Enter 跳跃，P 操作，/ 交谈，右 Shift 换人。
