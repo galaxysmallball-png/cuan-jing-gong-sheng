@@ -18,7 +18,7 @@
 
 [电脑启动与操作](docs/WINDOWS.md)
 
-完整解压运行附件，保持 CuanParty.exe 与 CuanParty.pck 在同一目录，双击 EXE；支持键盘单人与同屏双人，无需预先安装 Godot。已完成 Windows 原生启动、独立 PCK 加载及成品包 GPU 检查。
+完整解压运行附件，保持 CuanParty.exe 与 CuanParty.pck 在同一目录，双击 EXE；支持键盘单人与同屏双人。无需预先安装 Godot。已完成 Windows 原生启动、独立 PCK 加载及成品包 GPU 检查。
 
 ![电脑游戏界面](docs/images/windows.png)
 
